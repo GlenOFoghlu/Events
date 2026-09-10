@@ -1,0 +1,5771 @@
+{
+  "Version": 1,
+  "Hash": "NUXjc6ZD+xcfbkw/qFh+0WGzpo/EdTMHCsaYTHAMZ7Y=",
+  "Source": "DublinEventsCollector",
+  "BasePath": "_content/DublinEventsCollector",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DublinEventsCollector/wwwroot",
+      "Source": "DublinEventsCollector",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/2o5rs76g0e-o6uq8mz00s.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/abbey-theatre#[.{fingerprint=o6uq8mz00s}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/abbey-theatre.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "o32do51wz6",
+      "Integrity": "5KcX2nDNXfRshmlS2nbi7BYED0h27KEl/vuuYsImUr0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/abbey-theatre.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-2zqs0xklc2.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "styles#[.{fingerprint=2zqs0xklc2}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3bcyqw0wxa",
+      "Integrity": "MbP3jgslAdP2warcW3mOsFM0OWlo+xnmZKJ4u2oH3a0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/4ja2hm7ufr-ckr7ohxaf5.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/gaiety-theatre#[.{fingerprint=ckr7ohxaf5}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i1ipwoh4w1",
+      "Integrity": "aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/92u7np2mgs-kzzyp2m0e1.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/fringefest#[.{fingerprint=kzzyp2m0e1}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/fringefest.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "72tept7h3l",
+      "Integrity": "YXgNQsTqL/nQtH/rYwqv+XzcfzZfNu+Wr6Gq78eFnmo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/fringefest.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/am5963zm68-lvusj0gl6t.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/ticketmaster#[.{fingerprint=lvusj0gl6t}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/ticketmaster.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vj720bwret",
+      "Integrity": "RaFUOdacDTXbK2qjCRAdv21J1gxqQKNeaVTUOONv8v4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/ticketmaster.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-7blh3snjma.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "index#[.{fingerprint=7blh3snjma}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "34f20wokz7",
+      "Integrity": "/UZUFjoYpxzSHdvIT2+Kxzrncc2uXhcCUyVDo552Wy0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fdege5zw4t-alzqglsmg7.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/national-concert-hall#[.{fingerprint=alzqglsmg7}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/national-concert-hall.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "h631xjs284",
+      "Integrity": "pwwdSB4UkODSYnnIBROK/zM6KkU2LdjEe3zP43Oa+Gs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/national-concert-hall.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-umrp42gwbm.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "app#[.{fingerprint=umrp42gwbm}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "e3cctg3owa",
+      "Integrity": "OnVF4doGI4sIrMLCrbr/j9riv8TsyGQu/PWgD2bEJXk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/hwnx8hc3l6-z4euouqbfb.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/mcd#[.{fingerprint=z4euouqbfb}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/mcd.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "w3by674p9v",
+      "Integrity": "vC4SHp2gK0YcPuEH+cT4dctla539F+eJSzzxZS10UZo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/mcd.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/nu34r19oiu-zsywwd5gv7.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/pavilion-theatre#[.{fingerprint=zsywwd5gv7}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/pavilion-theatre.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vvktg722cd",
+      "Integrity": "+zrku7JdKjEBEYWbB8UzcLdQwQcMRbQtLovQFsZSkZg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/pavilion-theatre.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ol7q8xksiy-u46uj6p24z.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/eventbrite#[.{fingerprint=u46uj6p24z}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/eventbrite.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "27iu5p0vfg",
+      "Integrity": "nqBI6jzMbuIUwPXue9GPHWR53vS+LEf+RwOpstJugLA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/eventbrite.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ox19lgkd5x-wue92kc31j.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/3olympia#[.{fingerprint=wue92kc31j}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/3olympia.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rzkz3p29m4",
+      "Integrity": "+WNL94EF2KyizR1DOd6on9yh42SgeD2Qfhr4LB3nHCQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/3olympia.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/pys5ctke8e-y8bfadq3za.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/entertainment-ie#[.{fingerprint=y8bfadq3za}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/entertainment-ie.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "grjzrjbth3",
+      "Integrity": "zGUnZbfw6Kkl72lOs9QxdwI8ewOPbSfi+ZRxHrguDmQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/entertainment-ie.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/rdsqnjgdog-hs45jnx8yb.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/vicar-street#[.{fingerprint=hs45jnx8yb}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/vicar-street.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7478qv08mn",
+      "Integrity": "+fOB8Y6OrFqDWCl8vIrjumbWvKbcrAG5aI1SJzQ+adg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/vicar-street.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/uhqsk2yo1f-5ipweew5fc.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/rte-orchestra#[.{fingerprint=5ipweew5fc}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/rte-orchestra.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/rte-orchestra.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/xzeir099h4-ckr7ohxaf5.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/smock-alley#[.{fingerprint=ckr7ohxaf5}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/smock-alley.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i1ipwoh4w1",
+      "Integrity": "aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/smock-alley.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "umrp42gwbm",
+      "Integrity": "JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.js"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/3olympia.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/3olympia#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wue92kc31j",
+      "Integrity": "iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/3olympia.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/abbey-theatre.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/abbey-theatre#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o6uq8mz00s",
+      "Integrity": "UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/abbey-theatre.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/button-factory.webp",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/button-factory#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "80mcw2i931",
+      "Integrity": "aMIoOw4P6TcIsekEMREIhRzfy352REyVbA1qF/coTrM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/button-factory.webp"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/dublin-ie.png",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/dublin-ie#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tfdjj2em7y",
+      "Integrity": "yWWlAPaYSDUm+vkqwoYEfOzYJWCM0dgydt45KzChOoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/dublin-ie.png"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/entertainment-ie.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/entertainment-ie#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y8bfadq3za",
+      "Integrity": "suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/entertainment-ie.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/eventbrite.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/eventbrite#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u46uj6p24z",
+      "Integrity": "jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/eventbrite.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/fringefest.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/fringefest#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kzzyp2m0e1",
+      "Integrity": "ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/fringefest.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/gaiety-theatre#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ckr7ohxaf5",
+      "Integrity": "TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/gaiety-theatre.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.png",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/gaiety-theatre#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "anta49zkw7",
+      "Integrity": "atM5p7VECfqmTEtzCL7jc5NyQbgad4elBGfxUbQC7oA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/gaiety-theatre.png"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/mcd.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/mcd#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4euouqbfb",
+      "Integrity": "7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/mcd.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/national-concert-hall.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/national-concert-hall#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "alzqglsmg7",
+      "Integrity": "rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/national-concert-hall.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/pavilion-theatre.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/pavilion-theatre#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zsywwd5gv7",
+      "Integrity": "Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/pavilion-theatre.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/rte-orchestra.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/rte-orchestra#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/rte-orchestra.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/smock-alley.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/smock-alley#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ckr7ohxaf5",
+      "Integrity": "TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/smock-alley.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/ticketmaster.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/ticketmaster#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lvusj0gl6t",
+      "Integrity": "r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/ticketmaster.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/vicar-street.ico",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/logos/vicar-street#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hs45jnx8yb",
+      "Integrity": "gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/logos/vicar-street.ico"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7blh3snjma",
+      "Integrity": "I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2zqs0xklc2",
+      "Integrity": "cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.js",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-umrp42gwbm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000232883093"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4293"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OnVF4doGI4sIrMLCrbr/j9riv8TsyGQu/PWgD2bEJXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:57:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM="
+        }
+      ]
+    },
+    {
+      "Route": "app.js",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:57:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM="
+        }
+      ]
+    },
+    {
+      "Route": "app.js.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-umrp42gwbm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OnVF4doGI4sIrMLCrbr/j9riv8TsyGQu/PWgD2bEJXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:57:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OnVF4doGI4sIrMLCrbr/j9riv8TsyGQu/PWgD2bEJXk="
+        }
+      ]
+    },
+    {
+      "Route": "app.umrp42gwbm.js",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-umrp42gwbm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000232883093"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4293"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OnVF4doGI4sIrMLCrbr/j9riv8TsyGQu/PWgD2bEJXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:57:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "umrp42gwbm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM="
+        }
+      ]
+    },
+    {
+      "Route": "app.umrp42gwbm.js",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:57:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "umrp42gwbm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JiRaJroGxbJBNrBAohoYmYbloQ2AdOXqKeIPLB5rraM="
+        }
+      ]
+    },
+    {
+      "Route": "app.umrp42gwbm.js.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-umrp42gwbm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OnVF4doGI4sIrMLCrbr/j9riv8TsyGQu/PWgD2bEJXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:57:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "umrp42gwbm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OnVF4doGI4sIrMLCrbr/j9riv8TsyGQu/PWgD2bEJXk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/3olympia.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ox19lgkd5x-wue92kc31j.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000046932933"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21306"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+WNL94EF2KyizR1DOd6on9yh42SgeD2Qfhr4LB3nHCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/3olympia.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/3olympia.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/3olympia.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ox19lgkd5x-wue92kc31j.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+WNL94EF2KyizR1DOd6on9yh42SgeD2Qfhr4LB3nHCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+WNL94EF2KyizR1DOd6on9yh42SgeD2Qfhr4LB3nHCQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/3olympia.wue92kc31j.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ox19lgkd5x-wue92kc31j.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000046932933"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21306"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+WNL94EF2KyizR1DOd6on9yh42SgeD2Qfhr4LB3nHCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wue92kc31j"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/3olympia.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/3olympia.wue92kc31j.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/3olympia.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wue92kc31j"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/3olympia.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iLr0D+tDRjqPaqZUPoi9vjPw25oxdIbnhu7h5cdqlUQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/3olympia.wue92kc31j.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ox19lgkd5x-wue92kc31j.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+WNL94EF2KyizR1DOd6on9yh42SgeD2Qfhr4LB3nHCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wue92kc31j"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/3olympia.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+WNL94EF2KyizR1DOd6on9yh42SgeD2Qfhr4LB3nHCQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/abbey-theatre.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/2o5rs76g0e-o6uq8mz00s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000231803431"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4313"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5KcX2nDNXfRshmlS2nbi7BYED0h27KEl/vuuYsImUr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/abbey-theatre.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/abbey-theatre.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/abbey-theatre.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/2o5rs76g0e-o6uq8mz00s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5KcX2nDNXfRshmlS2nbi7BYED0h27KEl/vuuYsImUr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5KcX2nDNXfRshmlS2nbi7BYED0h27KEl/vuuYsImUr0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/abbey-theatre.o6uq8mz00s.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/2o5rs76g0e-o6uq8mz00s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000231803431"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4313"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5KcX2nDNXfRshmlS2nbi7BYED0h27KEl/vuuYsImUr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6uq8mz00s"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/abbey-theatre.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/abbey-theatre.o6uq8mz00s.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/abbey-theatre.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6uq8mz00s"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/abbey-theatre.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UGv5imgemfcp/2hdiHhCUGfKZElIbP6LnrUiAg1/6ag="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/abbey-theatre.o6uq8mz00s.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/2o5rs76g0e-o6uq8mz00s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5KcX2nDNXfRshmlS2nbi7BYED0h27KEl/vuuYsImUr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6uq8mz00s"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/abbey-theatre.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5KcX2nDNXfRshmlS2nbi7BYED0h27KEl/vuuYsImUr0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/button-factory.80mcw2i931.webp",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/button-factory.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMIoOw4P6TcIsekEMREIhRzfy352REyVbA1qF/coTrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "80mcw2i931"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/button-factory.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMIoOw4P6TcIsekEMREIhRzfy352REyVbA1qF/coTrM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/button-factory.webp",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/button-factory.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMIoOw4P6TcIsekEMREIhRzfy352REyVbA1qF/coTrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMIoOw4P6TcIsekEMREIhRzfy352REyVbA1qF/coTrM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/dublin-ie.png",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/dublin-ie.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWWlAPaYSDUm+vkqwoYEfOzYJWCM0dgydt45KzChOoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWWlAPaYSDUm+vkqwoYEfOzYJWCM0dgydt45KzChOoM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/dublin-ie.tfdjj2em7y.png",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/dublin-ie.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWWlAPaYSDUm+vkqwoYEfOzYJWCM0dgydt45KzChOoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tfdjj2em7y"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/dublin-ie.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWWlAPaYSDUm+vkqwoYEfOzYJWCM0dgydt45KzChOoM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/entertainment-ie.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/pys5ctke8e-y8bfadq3za.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000069851914"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14315"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zGUnZbfw6Kkl72lOs9QxdwI8ewOPbSfi+ZRxHrguDmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/entertainment-ie.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/entertainment-ie.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/entertainment-ie.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/pys5ctke8e-y8bfadq3za.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14315"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zGUnZbfw6Kkl72lOs9QxdwI8ewOPbSfi+ZRxHrguDmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zGUnZbfw6Kkl72lOs9QxdwI8ewOPbSfi+ZRxHrguDmQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/entertainment-ie.y8bfadq3za.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/pys5ctke8e-y8bfadq3za.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000069851914"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14315"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zGUnZbfw6Kkl72lOs9QxdwI8ewOPbSfi+ZRxHrguDmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y8bfadq3za"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/entertainment-ie.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/entertainment-ie.y8bfadq3za.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/entertainment-ie.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y8bfadq3za"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/entertainment-ie.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-suQS6/Nrl+tnN7RcCwAZZ1yMuKSQzOTQp708ItA5BNc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/entertainment-ie.y8bfadq3za.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/pys5ctke8e-y8bfadq3za.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14315"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zGUnZbfw6Kkl72lOs9QxdwI8ewOPbSfi+ZRxHrguDmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y8bfadq3za"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/entertainment-ie.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zGUnZbfw6Kkl72lOs9QxdwI8ewOPbSfi+ZRxHrguDmQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/eventbrite.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ol7q8xksiy-u46uj6p24z.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000028492464"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35096"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nqBI6jzMbuIUwPXue9GPHWR53vS+LEf+RwOpstJugLA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/eventbrite.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/eventbrite.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/eventbrite.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ol7q8xksiy-u46uj6p24z.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nqBI6jzMbuIUwPXue9GPHWR53vS+LEf+RwOpstJugLA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nqBI6jzMbuIUwPXue9GPHWR53vS+LEf+RwOpstJugLA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/eventbrite.u46uj6p24z.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ol7q8xksiy-u46uj6p24z.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000028492464"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35096"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nqBI6jzMbuIUwPXue9GPHWR53vS+LEf+RwOpstJugLA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u46uj6p24z"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/eventbrite.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/eventbrite.u46uj6p24z.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/eventbrite.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u46uj6p24z"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/eventbrite.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jlWBBR1YKRAO3RyzHpTLvR4IBK0M41Ddk6kFzlE6MlE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/eventbrite.u46uj6p24z.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/ol7q8xksiy-u46uj6p24z.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nqBI6jzMbuIUwPXue9GPHWR53vS+LEf+RwOpstJugLA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u46uj6p24z"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/eventbrite.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nqBI6jzMbuIUwPXue9GPHWR53vS+LEf+RwOpstJugLA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/fringefest.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/92u7np2mgs-kzzyp2m0e1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005847953216"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YXgNQsTqL/nQtH/rYwqv+XzcfzZfNu+Wr6Gq78eFnmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/fringefest.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/fringefest.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/fringefest.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/92u7np2mgs-kzzyp2m0e1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YXgNQsTqL/nQtH/rYwqv+XzcfzZfNu+Wr6Gq78eFnmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YXgNQsTqL/nQtH/rYwqv+XzcfzZfNu+Wr6Gq78eFnmo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/fringefest.kzzyp2m0e1.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/92u7np2mgs-kzzyp2m0e1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005847953216"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YXgNQsTqL/nQtH/rYwqv+XzcfzZfNu+Wr6Gq78eFnmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kzzyp2m0e1"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/fringefest.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/fringefest.kzzyp2m0e1.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/fringefest.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kzzyp2m0e1"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/fringefest.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ULQDkvyrdOrIskE1Kh3USeizVpARU5SYbxkEs0J5UT0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/fringefest.kzzyp2m0e1.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/92u7np2mgs-kzzyp2m0e1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YXgNQsTqL/nQtH/rYwqv+XzcfzZfNu+Wr6Gq78eFnmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kzzyp2m0e1"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/fringefest.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YXgNQsTqL/nQtH/rYwqv+XzcfzZfNu+Wr6Gq78eFnmo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.anta49zkw7.png",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"atM5p7VECfqmTEtzCL7jc5NyQbgad4elBGfxUbQC7oA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:15:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "anta49zkw7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/gaiety-theatre.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-atM5p7VECfqmTEtzCL7jc5NyQbgad4elBGfxUbQC7oA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.ckr7ohxaf5.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/4ja2hm7ufr-ckr7ohxaf5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001385041551"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ckr7ohxaf5"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/gaiety-theatre.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.ckr7ohxaf5.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ckr7ohxaf5"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/gaiety-theatre.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.ckr7ohxaf5.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/4ja2hm7ufr-ckr7ohxaf5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ckr7ohxaf5"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/gaiety-theatre.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/4ja2hm7ufr-ckr7ohxaf5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001385041551"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/4ja2hm7ufr-ckr7ohxaf5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/gaiety-theatre.png",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/gaiety-theatre.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"atM5p7VECfqmTEtzCL7jc5NyQbgad4elBGfxUbQC7oA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:15:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-atM5p7VECfqmTEtzCL7jc5NyQbgad4elBGfxUbQC7oA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/mcd.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/hwnx8hc3l6-z4euouqbfb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000254258835"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3932"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vC4SHp2gK0YcPuEH+cT4dctla539F+eJSzzxZS10UZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/mcd.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/mcd.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/mcd.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/hwnx8hc3l6-z4euouqbfb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vC4SHp2gK0YcPuEH+cT4dctla539F+eJSzzxZS10UZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vC4SHp2gK0YcPuEH+cT4dctla539F+eJSzzxZS10UZo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/mcd.z4euouqbfb.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/hwnx8hc3l6-z4euouqbfb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000254258835"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3932"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vC4SHp2gK0YcPuEH+cT4dctla539F+eJSzzxZS10UZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4euouqbfb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/mcd.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/mcd.z4euouqbfb.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/mcd.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4euouqbfb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/mcd.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ayEwvdF/wWq2PxnJ45tCSZOaZQOBG9Qsui4rePGscg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/mcd.z4euouqbfb.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/hwnx8hc3l6-z4euouqbfb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vC4SHp2gK0YcPuEH+cT4dctla539F+eJSzzxZS10UZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4euouqbfb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/mcd.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vC4SHp2gK0YcPuEH+cT4dctla539F+eJSzzxZS10UZo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/national-concert-hall.alzqglsmg7.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fdege5zw4t-alzqglsmg7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000359195402"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2783"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwwdSB4UkODSYnnIBROK/zM6KkU2LdjEe3zP43Oa+Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alzqglsmg7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/national-concert-hall.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/national-concert-hall.alzqglsmg7.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/national-concert-hall.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alzqglsmg7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/national-concert-hall.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/national-concert-hall.alzqglsmg7.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fdege5zw4t-alzqglsmg7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwwdSB4UkODSYnnIBROK/zM6KkU2LdjEe3zP43Oa+Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alzqglsmg7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/national-concert-hall.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pwwdSB4UkODSYnnIBROK/zM6KkU2LdjEe3zP43Oa+Gs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/national-concert-hall.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fdege5zw4t-alzqglsmg7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000359195402"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2783"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwwdSB4UkODSYnnIBROK/zM6KkU2LdjEe3zP43Oa+Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/national-concert-hall.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/national-concert-hall.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rvpHjVJStd9dAEnYSXQA+w5T5YOzmjnW9SYkXOoXg8Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/national-concert-hall.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fdege5zw4t-alzqglsmg7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwwdSB4UkODSYnnIBROK/zM6KkU2LdjEe3zP43Oa+Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pwwdSB4UkODSYnnIBROK/zM6KkU2LdjEe3zP43Oa+Gs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/pavilion-theatre.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/nu34r19oiu-zsywwd5gv7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000415627598"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2405"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zrku7JdKjEBEYWbB8UzcLdQwQcMRbQtLovQFsZSkZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/pavilion-theatre.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/pavilion-theatre.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/pavilion-theatre.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/nu34r19oiu-zsywwd5gv7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zrku7JdKjEBEYWbB8UzcLdQwQcMRbQtLovQFsZSkZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zrku7JdKjEBEYWbB8UzcLdQwQcMRbQtLovQFsZSkZg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/pavilion-theatre.zsywwd5gv7.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/nu34r19oiu-zsywwd5gv7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000415627598"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2405"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zrku7JdKjEBEYWbB8UzcLdQwQcMRbQtLovQFsZSkZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zsywwd5gv7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/pavilion-theatre.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/pavilion-theatre.zsywwd5gv7.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/pavilion-theatre.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zsywwd5gv7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/pavilion-theatre.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mzyw6C5kS/E1LfMDk04lrJVq94f4JcqK+wQdHqJRc1k="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/pavilion-theatre.zsywwd5gv7.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/nu34r19oiu-zsywwd5gv7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zrku7JdKjEBEYWbB8UzcLdQwQcMRbQtLovQFsZSkZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zsywwd5gv7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/pavilion-theatre.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zrku7JdKjEBEYWbB8UzcLdQwQcMRbQtLovQFsZSkZg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/rte-orchestra.5ipweew5fc.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/uhqsk2yo1f-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/rte-orchestra.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/rte-orchestra.5ipweew5fc.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/rte-orchestra.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/rte-orchestra.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/rte-orchestra.5ipweew5fc.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/uhqsk2yo1f-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/rte-orchestra.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/rte-orchestra.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/uhqsk2yo1f-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/rte-orchestra.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/rte-orchestra.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/rte-orchestra.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/uhqsk2yo1f-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/smock-alley.ckr7ohxaf5.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/xzeir099h4-ckr7ohxaf5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001385041551"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ckr7ohxaf5"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/smock-alley.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/smock-alley.ckr7ohxaf5.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/smock-alley.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ckr7ohxaf5"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/smock-alley.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/smock-alley.ckr7ohxaf5.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/xzeir099h4-ckr7ohxaf5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ckr7ohxaf5"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/smock-alley.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/smock-alley.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/xzeir099h4-ckr7ohxaf5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001385041551"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/smock-alley.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/smock-alley.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TBPUUt1dSWcb2TyjLytPhceOObarCtHzjZjtJn+P2JY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/smock-alley.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/xzeir099h4-ckr7ohxaf5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aki97qBSX9uvCll7YwTOG2MNLIX4uM32V+Br063KKmk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/ticketmaster.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/am5963zm68-lvusj0gl6t.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001248439451"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "800"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RaFUOdacDTXbK2qjCRAdv21J1gxqQKNeaVTUOONv8v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/ticketmaster.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/ticketmaster.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/ticketmaster.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/am5963zm68-lvusj0gl6t.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RaFUOdacDTXbK2qjCRAdv21J1gxqQKNeaVTUOONv8v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RaFUOdacDTXbK2qjCRAdv21J1gxqQKNeaVTUOONv8v4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/ticketmaster.lvusj0gl6t.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/am5963zm68-lvusj0gl6t.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001248439451"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "800"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RaFUOdacDTXbK2qjCRAdv21J1gxqQKNeaVTUOONv8v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lvusj0gl6t"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/ticketmaster.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/ticketmaster.lvusj0gl6t.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/ticketmaster.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lvusj0gl6t"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/ticketmaster.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0H+B9zopKKo+bGPJ6ewau4dxVDB3nneallzosbkoAI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/ticketmaster.lvusj0gl6t.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/am5963zm68-lvusj0gl6t.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RaFUOdacDTXbK2qjCRAdv21J1gxqQKNeaVTUOONv8v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:14:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lvusj0gl6t"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/ticketmaster.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RaFUOdacDTXbK2qjCRAdv21J1gxqQKNeaVTUOONv8v4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/vicar-street.hs45jnx8yb.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/rdsqnjgdog-hs45jnx8yb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002444987775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "408"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fOB8Y6OrFqDWCl8vIrjumbWvKbcrAG5aI1SJzQ+adg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hs45jnx8yb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/vicar-street.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/vicar-street.hs45jnx8yb.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/vicar-street.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hs45jnx8yb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/vicar-street.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/vicar-street.hs45jnx8yb.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/rdsqnjgdog-hs45jnx8yb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fOB8Y6OrFqDWCl8vIrjumbWvKbcrAG5aI1SJzQ+adg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hs45jnx8yb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/logos/vicar-street.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fOB8Y6OrFqDWCl8vIrjumbWvKbcrAG5aI1SJzQ+adg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/vicar-street.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/rdsqnjgdog-hs45jnx8yb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002444987775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "408"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fOB8Y6OrFqDWCl8vIrjumbWvKbcrAG5aI1SJzQ+adg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/vicar-street.ico",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/vicar-street.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gWZgnA2Toz9+4BuI2TxKSOUBWrBdoy2+vswGxFOhcwU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/logos/vicar-street.ico.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/rdsqnjgdog-hs45jnx8yb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fOB8Y6OrFqDWCl8vIrjumbWvKbcrAG5aI1SJzQ+adg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fOB8Y6OrFqDWCl8vIrjumbWvKbcrAG5aI1SJzQ+adg="
+        }
+      ]
+    },
+    {
+      "Route": "index.7blh3snjma.html",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-7blh3snjma.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000999000999"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1000"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/UZUFjoYpxzSHdvIT2+Kxzrncc2uXhcCUyVDo552Wy0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7blh3snjma"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs="
+        }
+      ]
+    },
+    {
+      "Route": "index.7blh3snjma.html",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7blh3snjma"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs="
+        }
+      ]
+    },
+    {
+      "Route": "index.7blh3snjma.html.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-7blh3snjma.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/UZUFjoYpxzSHdvIT2+Kxzrncc2uXhcCUyVDo552Wy0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7blh3snjma"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/UZUFjoYpxzSHdvIT2+Kxzrncc2uXhcCUyVDo552Wy0="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-7blh3snjma.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000999000999"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1000"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/UZUFjoYpxzSHdvIT2+Kxzrncc2uXhcCUyVDo552Wy0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I4kaY/ERiKwFRlbkvxSbCtlfeUBxo5Rx9V3XHelBQGs="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-7blh3snjma.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/UZUFjoYpxzSHdvIT2+Kxzrncc2uXhcCUyVDo552Wy0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/UZUFjoYpxzSHdvIT2+Kxzrncc2uXhcCUyVDo552Wy0="
+        }
+      ]
+    },
+    {
+      "Route": "styles.2zqs0xklc2.css",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-2zqs0xklc2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000399680256"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2501"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbP3jgslAdP2warcW3mOsFM0OWlo+xnmZKJ4u2oH3a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2zqs0xklc2"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8="
+        }
+      ]
+    },
+    {
+      "Route": "styles.2zqs0xklc2.css",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2zqs0xklc2"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8="
+        }
+      ]
+    },
+    {
+      "Route": "styles.2zqs0xklc2.css.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-2zqs0xklc2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbP3jgslAdP2warcW3mOsFM0OWlo+xnmZKJ4u2oH3a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2zqs0xklc2"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MbP3jgslAdP2warcW3mOsFM0OWlo+xnmZKJ4u2oH3a0="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-2zqs0xklc2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000399680256"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2501"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbP3jgslAdP2warcW3mOsFM0OWlo+xnmZKJ4u2oH3a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cuQfmo1jcviLCCGRhd+E6e0kiUGdy3CoN2tfRMs7ev8="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-2zqs0xklc2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbP3jgslAdP2warcW3mOsFM0OWlo+xnmZKJ4u2oH3a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Sep 2026 10:58:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MbP3jgslAdP2warcW3mOsFM0OWlo+xnmZKJ4u2oH3a0="
+        }
+      ]
+    }
+  ]
+}

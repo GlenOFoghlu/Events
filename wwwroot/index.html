@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dublin Events Collector</title>
+  <link rel="stylesheet" href="/styles.css?v=20260910-whatsapp">
+</head>
+<body>
+  <header class="admin-bar">
+    <strong>Dublin Events</strong>
+    <span>Collector</span>
+  </header>
+
+  <main class="shell">
+    <section class="topbar" aria-label="Event search controls">
+      <div class="identity">
+        <div class="brand-mark" aria-hidden="true">
+          <span>DE</span>
+        </div>
+        <div>
+          <p class="eyebrow">Dublin</p>
+          <h1>Events</h1>
+        </div>
+      </div>
+
+      <form id="filters" class="filters">
+        <label>
+          <span>From</span>
+          <input id="fromDate" name="from" type="date">
+        </label>
+        <label>
+          <span>To</span>
+          <input id="toDate" name="to" type="date">
+        </label>
+        <label>
+          <span>Search</span>
+          <input id="searchText" name="q" type="search" placeholder="Title or venue">
+        </label>
+        <label>
+          <span>Source</span>
+          <select id="sourceFilter" name="source">
+            <option value="">All sources</option>
+          </select>
+        </label>
+        <label>
+          <span>Sort</span>
+          <select id="sortOrder" name="sort">
+            <option value="date">Date</option>
+            <option value="venue">Venue</option>
+          </select>
+        </label>
+        <button type="submit">Refresh</button>
+      </form>
+    </section>
+
+    <section class="summary-strip" aria-label="Collection summary">
+      <div>
+        <span class="metric" id="eventCount">0</span>
+        <span class="metric-label">events</span>
+      </div>
+      <div>
+        <span class="metric" id="venueCount">0</span>
+        <span class="metric-label">venues</span>
+      </div>
+      <div>
+        <span class="metric" id="sourceCount">0</span>
+        <span class="metric-label">sources</span>
+      </div>
+      <p id="windowLabel" class="window-label"></p>
+    </section>
+
+    <section class="source-panel" aria-label="Source status">
+      <div class="source-tabs" role="tablist" aria-label="Source groups">
+        <button id="sourcesWithEventsTab" class="source-tab active" type="button" role="tab" aria-selected="true" data-source-tab="with-events">
+          Reported events <span id="sourcesWithEventsCount">0</span>
+        </button>
+        <button id="sourcesWithoutEventsTab" class="source-tab" type="button" role="tab" aria-selected="false" data-source-tab="without-events">
+          No events <span id="sourcesWithoutEventsCount">0</span>
+        </button>
+      </div>
+      <div id="sourceStatus" class="source-status" role="tabpanel" aria-label="Source status"></div>
+    </section>
+
+    <section class="workspace" aria-label="Events workspace">
+      <div class="event-list-wrap">
+        <div class="list-header">
+          <h2>Upcoming</h2>
+          <span id="visibleCount"></span>
+        </div>
+        <ol id="eventList" class="event-list"></ol>
+      </div>
+
+      <aside class="detail-panel" aria-label="Selected event">
+        <div id="eventDetail" class="event-detail empty">
+          <p>Select an event</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="/app.js?v=20260910-whatsapp"></script>
+</body>
+</html>

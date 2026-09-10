@@ -1,0 +1,11 @@
+@DublinEventsCollector_HostAddress = http://localhost:5281
+
+GET {{DublinEventsCollector_HostAddress}}/sources
+Accept: application/json
+
+###
+
+GET {{DublinEventsCollector_HostAddress}}/events?days=30
+Accept: application/json
+
+###

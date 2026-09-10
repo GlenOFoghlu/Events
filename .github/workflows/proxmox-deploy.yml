@@ -1,0 +1,110 @@
+name: Proxmox Deploy via Cloudflare
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: dublin-events-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_HOST: sshvm101.ofoghlu.dev
+      DEPLOY_USER: root
+      DEPLOY_DIR: /root/dublin-events-collector
+      RELEASE_NAME: dublin-events-collector-release.tar.gz
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install cloudflared
+        run: |
+          curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+          sudo dpkg -i cloudflared.deb
+
+      - name: Prepare SSH key and production env
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          PROD_ENV: ${{ secrets.PROD_ENV }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+
+          key = os.environ["SSH_PRIVATE_KEY"]
+          if "\\n" in key and "\n" not in key:
+              key = key.replace("\\n", "\n")
+
+          Path("private_key.pem").write_text(key.strip() + "\n")
+          Path("prod.env").write_text(os.environ["PROD_ENV"].strip() + "\n")
+          PY
+          chmod 600 private_key.pem
+          ssh-keygen -y -f private_key.pem > /dev/null
+
+      - name: Create deployment bundle
+        run: |
+          tar \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.vs' \
+            --exclude='.vscode' \
+            --exclude='.idea' \
+            --exclude='bin' \
+            --exclude='obj' \
+            --exclude='.env' \
+            --exclude='prod.env' \
+            --exclude='private_key.pem' \
+            --exclude='*.log' \
+            -czf "$RUNNER_TEMP/$RELEASE_NAME" .
+
+      - name: Ensure remote directory
+        run: |
+          ssh -i private_key.pem \
+            -o "StrictHostKeyChecking=no" \
+            -o "IdentitiesOnly=yes" \
+            -o "ProxyCommand=cloudflared access ssh --hostname $DEPLOY_HOST --id ${{ secrets.CF_CLIENT_ID }} --secret ${{ secrets.CF_CLIENT_SECRET }}" \
+            "$DEPLOY_USER@$DEPLOY_HOST" \
+            "mkdir -p '$DEPLOY_DIR'"
+
+      - name: Upload production env
+        run: |
+          scp -i private_key.pem \
+            -o "StrictHostKeyChecking=no" \
+            -o "IdentitiesOnly=yes" \
+            -o "ProxyCommand=cloudflared access ssh --hostname $DEPLOY_HOST --id ${{ secrets.CF_CLIENT_ID }} --secret ${{ secrets.CF_CLIENT_SECRET }}" \
+            prod.env \
+            "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIR/.env"
+
+      - name: Upload release bundle
+        run: |
+          scp -i private_key.pem \
+            -o "StrictHostKeyChecking=no" \
+            -o "IdentitiesOnly=yes" \
+            -o "ProxyCommand=cloudflared access ssh --hostname $DEPLOY_HOST --id ${{ secrets.CF_CLIENT_ID }} --secret ${{ secrets.CF_CLIENT_SECRET }}" \
+            "$RUNNER_TEMP/$RELEASE_NAME" \
+            "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIR/$RELEASE_NAME"
+
+      - name: Run remote deployment
+        run: |
+          ssh -i private_key.pem \
+            -o "StrictHostKeyChecking=no" \
+            -o "IdentitiesOnly=yes" \
+            -o "ProxyCommand=cloudflared access ssh --hostname $DEPLOY_HOST --id ${{ secrets.CF_CLIENT_ID }} --secret ${{ secrets.CF_CLIENT_SECRET }}" \
+            "$DEPLOY_USER@$DEPLOY_HOST" \
+            "set -euo pipefail && \
+            TMP_DIR='$DEPLOY_DIR.release'; \
+            BACKUP_DIR='$DEPLOY_DIR.backup.'\$(date +%Y%m%d%H%M%S); \
+            rm -rf \"\$TMP_DIR\" && \
+            mkdir -p \"\$TMP_DIR\" && \
+            tar -xzf '$DEPLOY_DIR/$RELEASE_NAME' -C \"\$TMP_DIR\" && \
+            cp '$DEPLOY_DIR/.env' \"\$TMP_DIR/.env\" && \
+            if [ -d '$DEPLOY_DIR' ]; then mv '$DEPLOY_DIR' \"\$BACKUP_DIR\"; fi && \
+            mv \"\$TMP_DIR\" '$DEPLOY_DIR' && \
+            cd '$DEPLOY_DIR' && \
+            docker compose --env-file .env up -d --build && \
+            docker image prune -f"
