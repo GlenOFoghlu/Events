@@ -5,6 +5,118 @@
       "PackagePath": "staticwebassets/app.js"
     },
     {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/branding/dublin-gaa.png",
+      "PackagePath": "staticwebassets/assets/branding/dublin-gaa.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/3olympia.png",
+      "PackagePath": "staticwebassets/assets/favicons/3olympia.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/abbey-theatre.png",
+      "PackagePath": "staticwebassets/assets/favicons/abbey-theatre.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/axis-ballymun.png",
+      "PackagePath": "staticwebassets/assets/favicons/axis-ballymun.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/button-factory.png",
+      "PackagePath": "staticwebassets/assets/favicons/button-factory.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/civic-theatre.png",
+      "PackagePath": "staticwebassets/assets/favicons/civic-theatre.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/draiocht.png",
+      "PackagePath": "staticwebassets/assets/favicons/draiocht.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/dublin-ie.png",
+      "PackagePath": "staticwebassets/assets/favicons/dublin-ie.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/entertainment-ie.png",
+      "PackagePath": "staticwebassets/assets/favicons/entertainment-ie.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/evensos.png",
+      "PackagePath": "staticwebassets/assets/favicons/evensos.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/eventbrite.png",
+      "PackagePath": "staticwebassets/assets/favicons/eventbrite.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/fringefest.png",
+      "PackagePath": "staticwebassets/assets/favicons/fringefest.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/gaiety-theatre.png",
+      "PackagePath": "staticwebassets/assets/favicons/gaiety-theatre.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/gate-theatre.png",
+      "PackagePath": "staticwebassets/assets/favicons/gate-theatre.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/mcd.png",
+      "PackagePath": "staticwebassets/assets/favicons/mcd.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/mill-theatre.png",
+      "PackagePath": "staticwebassets/assets/favicons/mill-theatre.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/national-concert-hall.png",
+      "PackagePath": "staticwebassets/assets/favicons/national-concert-hall.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/pavilion-theatre.png",
+      "PackagePath": "staticwebassets/assets/favicons/pavilion-theatre.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/rte-orchestra.png",
+      "PackagePath": "staticwebassets/assets/favicons/rte-orchestra.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/smock-alley.png",
+      "PackagePath": "staticwebassets/assets/favicons/smock-alley.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/the-academy.png",
+      "PackagePath": "staticwebassets/assets/favicons/the-academy.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/the-grand-social.png",
+      "PackagePath": "staticwebassets/assets/favicons/the-grand-social.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/ticketmaster.png",
+      "PackagePath": "staticwebassets/assets/favicons/ticketmaster.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/tickts.png",
+      "PackagePath": "staticwebassets/assets/favicons/tickts.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/vicar-street.png",
+      "PackagePath": "staticwebassets/assets/favicons/vicar-street.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/whats-on-dublin.png",
+      "PackagePath": "staticwebassets/assets/favicons/whats-on-dublin.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/whelans.png",
+      "PackagePath": "staticwebassets/assets/favicons/whelans.png"
+    },
+    {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/workmans-club.png",
+      "PackagePath": "staticwebassets/assets/favicons/workmans-club.png"
+    },
+    {
       "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/3olympia.ico",
       "PackagePath": "staticwebassets/assets/logos/3olympia.ico"
     },

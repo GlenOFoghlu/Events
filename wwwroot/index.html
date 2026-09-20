@@ -4,19 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dublin Events Collector</title>
-  <link rel="stylesheet" href="/styles.css?v=20260910-whatsapp">
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem("dublin-events-theme");
+      document.documentElement.dataset.theme = savedTheme
+        ?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    })();
+  </script>
+  <link rel="stylesheet" href="/styles.css?v=20260920-footer">
 </head>
-<body>
+<body id="top">
   <header class="admin-bar">
     <strong>Dublin Events</strong>
     <span>Collector</span>
+    <label class="theme-control">
+      <span>Dark mode</span>
+      <input id="themeToggle" type="checkbox" role="switch" aria-label="Dark mode">
+      <span class="theme-switch" aria-hidden="true"></span>
+    </label>
   </header>
 
   <main class="shell">
     <section class="topbar" aria-label="Event search controls">
       <div class="identity">
-        <div class="brand-mark" aria-hidden="true">
-          <span>DE</span>
+        <div class="brand-mark">
+          <img src="/assets/branding/dublin-gaa.png" alt="Dublin GAA crest">
         </div>
         <div>
           <p class="eyebrow">Dublin</p>
@@ -41,6 +53,12 @@
           <span>Source</span>
           <select id="sourceFilter" name="source">
             <option value="">All sources</option>
+          </select>
+        </label>
+        <label>
+          <span id="venueFilterLabel">Venue</span>
+          <select id="venueFilter" name="venue">
+            <option value="">All venues</option>
           </select>
         </label>
         <label>
@@ -70,7 +88,7 @@
       <p id="windowLabel" class="window-label"></p>
     </section>
 
-    <section class="source-panel" aria-label="Source status">
+    <section id="sources" class="source-panel" aria-label="Source status">
       <div class="source-tabs" role="tablist" aria-label="Source groups">
         <button id="sourcesWithEventsTab" class="source-tab active" type="button" role="tab" aria-selected="true" data-source-tab="with-events">
           Reported events <span id="sourcesWithEventsCount">0</span>
@@ -99,6 +117,26 @@
     </section>
   </main>
 
-  <script src="/app.js?v=20260910-whatsapp"></script>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="/assets/branding/dublin-gaa.png" alt="" aria-hidden="true">
+        <div>
+          <strong>Dublin Events Collector</strong>
+          <span>Dublin, Ireland</span>
+        </div>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <a href="#filters">Search</a>
+        <a href="#sources">Sources</a>
+        <a href="mailto:glen.foghlu@gmail.com">Contact</a>
+        <a href="#top">Back to top</a>
+      </nav>
+      <p class="site-footer__note">Event details, prices and availability should be confirmed with the original ticket provider.</p>
+      <p class="site-footer__copyright">&copy; 2026 Dublin Events Collector</p>
+    </div>
+  </footer>
+
+  <script src="/app.js?v=20260920-ticketmaster-venue-filter"></script>
 </body>
 </html>

@@ -70,9 +70,27 @@ public sealed class EvensosEventSource(
                 : image?.GetString(),
             Category = item.Value.String("@type"),
             Currency = offers?.String("priceCurrency"),
-            Status = ShortSchemaValue(item.Value.String("eventStatus"))
+            Status = IsSoldOut(offers) ? "sold-out" : ShortSchemaValue(item.Value.String("eventStatus"))
         };
     }
+
+    private static bool IsSoldOut(JsonElement? offers)
+    {
+        if (offers is null)
+        {
+            return false;
+        }
+
+        if (offers.Value.ValueKind == JsonValueKind.Array)
+        {
+            return offers.Value.EnumerateArray().Any(IsSoldOutOffer);
+        }
+
+        return IsSoldOutOffer(offers.Value);
+    }
+
+    private static bool IsSoldOutOffer(JsonElement offer) =>
+        offer.String("availability")?.EndsWith("SoldOut", StringComparison.OrdinalIgnoreCase) == true;
 
     private static string? ShortSchemaValue(string? value)
     {

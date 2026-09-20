@@ -6,11 +6,14 @@ const state = {
 };
 
 const elements = {
+  themeToggle: document.querySelector("#themeToggle"),
   filters: document.querySelector("#filters"),
   fromDate: document.querySelector("#fromDate"),
   toDate: document.querySelector("#toDate"),
   searchText: document.querySelector("#searchText"),
   sourceFilter: document.querySelector("#sourceFilter"),
+  venueFilterLabel: document.querySelector("#venueFilterLabel"),
+  venueFilter: document.querySelector("#venueFilter"),
   sortOrder: document.querySelector("#sortOrder"),
   eventCount: document.querySelector("#eventCount"),
   venueCount: document.querySelector("#venueCount"),
@@ -28,8 +31,11 @@ const elements = {
 const sourceLabels = {
   "3olympia": "3Olympia",
   "abbey-theatre": "Abbey Theatre",
+  "axis-ballymun": "Axis Ballymun",
   "button-factory": "Button Factory",
+  "civic-theatre": "Civic Theatre",
   "dublin-ie": "Dublin.ie",
+  "draiocht": "Draíocht",
   "entertainment-ie": "Entertainment.ie",
   "eventbrite": "Eventbrite",
   "evensos": "Evensos",
@@ -37,6 +43,7 @@ const sourceLabels = {
   "gaiety-theatre": "Gaiety Theatre",
   "gate-theatre": "Gate Theatre",
   "mcd": "MCD",
+  "mill-theatre": "dlr Mill Theatre",
   "national-concert-hall": "National Concert Hall",
   "pavilion-theatre": "Pavilion Theatre",
   "rte-orchestra": "RTÉ Orchestra",
@@ -52,23 +59,69 @@ const sourceLabels = {
 };
 
 const sourceLogos = {
-  "3olympia": "/assets/logos/3olympia.ico",
-  "abbey-theatre": "/assets/logos/abbey-theatre.ico",
-  "button-factory": "/assets/logos/button-factory.webp",
-  "dublin-ie": "/assets/logos/dublin-ie.png",
-  "entertainment-ie": "/assets/logos/entertainment-ie.ico",
-  "eventbrite": "/assets/logos/eventbrite.ico",
-  "gaiety-theatre": "/assets/logos/gaiety-theatre.png",
-  "mcd": "/assets/logos/mcd.ico",
-  "national-concert-hall": "/assets/logos/national-concert-hall.ico",
-  "pavilion-theatre": "/assets/logos/pavilion-theatre.ico",
-  "ticketmaster": "/assets/logos/ticketmaster.ico",
-  "vicar-street": "/assets/logos/vicar-street.ico"
+  "3olympia": "/assets/favicons/3olympia.png",
+  "abbey-theatre": "/assets/favicons/abbey-theatre.png",
+  "axis-ballymun": "/assets/favicons/axis-ballymun.png",
+  "button-factory": "/assets/favicons/button-factory.png",
+  "civic-theatre": "/assets/favicons/civic-theatre.png",
+  "dublin-ie": "/assets/favicons/dublin-ie.png",
+  "draiocht": "/assets/favicons/draiocht.png",
+  "entertainment-ie": "/assets/favicons/entertainment-ie.png",
+  "eventbrite": "/assets/favicons/eventbrite.png",
+  "evensos": "/assets/favicons/evensos.png",
+  "fringefest": "/assets/favicons/fringefest.png",
+  "gaiety-theatre": "/assets/favicons/gaiety-theatre.png",
+  "gate-theatre": "/assets/favicons/gate-theatre.png",
+  "mcd": "/assets/favicons/mcd.png",
+  "mill-theatre": "/assets/favicons/mill-theatre.png",
+  "national-concert-hall": "/assets/favicons/national-concert-hall.png",
+  "pavilion-theatre": "/assets/favicons/pavilion-theatre.png",
+  "rte-orchestra": "/assets/favicons/rte-orchestra.png",
+  "smock-alley": "/assets/favicons/smock-alley.png",
+  "ticketmaster": "/assets/favicons/ticketmaster.png",
+  "the-academy": "/assets/favicons/the-academy.png",
+  "the-grand-social": "/assets/favicons/the-grand-social.png",
+  "tickts": "/assets/favicons/tickts.png",
+  "vicar-street": "/assets/favicons/vicar-street.png",
+  "whats-on-dublin": "/assets/favicons/whats-on-dublin.png",
+  "whelans": "/assets/favicons/whelans.png",
+  "workmans-club": "/assets/favicons/workmans-club.png"
+};
+
+const sourceColors = {
+  "3olympia": "#c62828",
+  "abbey-theatre": "#6a3d9a",
+  "axis-ballymun": "#d83a76",
+  "button-factory": "#9a4f12",
+  "civic-theatre": "#007a78",
+  "dublin-ie": "#00856a",
+  "draiocht": "#8a2f78",
+  "entertainment-ie": "#d14900",
+  "eventbrite": "#d1410c",
+  "evensos": "#1261a0",
+  "fringefest": "#c2185b",
+  "gaiety-theatre": "#8b1e3f",
+  "gate-theatre": "#76520e",
+  "mcd": "#006b54",
+  "mill-theatre": "#d14a24",
+  "national-concert-hall": "#e3146c",
+  "pavilion-theatre": "#087f8c",
+  "rte-orchestra": "#007749",
+  "smock-alley": "#5b4b8a",
+  "ticketmaster": "#026cdf",
+  "the-academy": "#a63a00",
+  "the-grand-social": "#8a3758",
+  "tickts": "#226b3a",
+  "vicar-street": "#b1365b",
+  "whats-on-dublin": "#315c9b",
+  "whelans": "#7b5427",
+  "workmans-club": "#4e5d35"
 };
 
 init();
 
 async function init() {
+  initTheme();
   setDefaultDates();
   await loadSources();
   await loadEvents();
@@ -80,15 +133,28 @@ async function init() {
 
   elements.searchText.addEventListener("input", renderEvents);
   elements.sourceFilter.addEventListener("change", () => {
+    updateVenueOptions();
     renderSourceStatus();
     renderEvents();
   });
+  elements.venueFilter.addEventListener("change", renderEvents);
   elements.sortOrder.addEventListener("change", renderEvents);
   elements.sourceTabs.forEach(tab => {
     tab.addEventListener("click", () => {
       state.sourceStatusTab = tab.dataset.sourceTab;
       renderSourceStatus();
     });
+  });
+}
+
+function initTheme() {
+  const currentTheme = document.documentElement.dataset.theme ?? "light";
+  elements.themeToggle.checked = currentTheme === "dark";
+
+  elements.themeToggle.addEventListener("change", () => {
+    const theme = elements.themeToggle.checked ? "dark" : "light";
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("dublin-events-theme", theme);
   });
 }
 
@@ -129,6 +195,7 @@ async function loadEvents() {
     state.events = data.events ?? [];
     state.sourceResults = data.sourceResults ?? [];
     state.selectedId = state.events[0]?.sourceEventId ?? null;
+    updateVenueOptions();
     renderSummary(data);
     renderSourceStatus();
     renderEvents();
@@ -204,18 +271,46 @@ function updateSourceTabs() {
 
 function toggleSourceFilter(source) {
   elements.sourceFilter.value = elements.sourceFilter.value === source ? "" : source;
+  updateVenueOptions();
   renderSourceStatus();
   renderEvents();
+}
+
+function updateVenueOptions() {
+  const selectedSource = elements.sourceFilter.value;
+  const currentVenue = elements.venueFilter.value;
+  const venueCounts = new Map();
+  for (const event of state.events) {
+    if ((!selectedSource || event.source === selectedSource) && event.venue) {
+      venueCounts.set(event.venue, (venueCounts.get(event.venue) ?? 0) + 1);
+    }
+  }
+
+  const venues = [...venueCounts.keys()].sort((left, right) => compareText(left, right));
+  const sourceLabel = sourceLabels[selectedSource] ?? selectedSource;
+  elements.venueFilterLabel.textContent = selectedSource ? `${sourceLabel} venue` : "Venue";
+
+  elements.venueFilter.innerHTML = `<option value="">${selectedSource ? `All ${escapeHtml(sourceLabel)} venues` : "All venues"}</option>`;
+  for (const venue of venues) {
+    const option = document.createElement("option");
+    option.value = venue;
+    option.textContent = `${venue} (${venueCounts.get(venue)})`;
+    elements.venueFilter.append(option);
+  }
+
+  elements.venueFilter.value = venues.includes(currentVenue) ? currentVenue : "";
 }
 
 function renderEvents() {
   const query = elements.searchText.value.trim().toLowerCase();
   const source = elements.sourceFilter.value;
+  const venue = elements.venueFilter.value;
   const filtered = state.events.filter(event => {
     const matchesSource = !source || event.source === source;
+    const matchesVenue = !venue || event.venue === venue;
     const searchable = `${event.title} ${event.venue ?? ""} ${event.city ?? ""}`.toLowerCase();
     const matchesQuery = !query || searchable.includes(query);
-    return matchesSource && matchesQuery;
+    return matchesSource && matchesVenue && matchesQuery;
   }).sort(compareEvents);
 
   elements.visibleCount.textContent = `${filtered.length} shown`;
@@ -235,6 +330,7 @@ function renderEvents() {
     const row = document.createElement("li");
     const outsideDublin = isOutsideDublin(event);
     row.className = `event-row ${event.sourceEventId === state.selectedId ? "selected" : ""}`;
+    row.style.setProperty("--source-accent", sourceColors[event.source] ?? "var(--admin-blue)");
     row.tabIndex = 0;
     row.innerHTML = `
       <div class="datebox">
@@ -242,19 +338,27 @@ function renderEvents() {
         <span>${formatDay(event.startsAt)}</span>
       </div>
       <div class="event-main">
-        <h3>${escapeHtml(event.title)}</h3>
+        <div class="event-title-line">
+          ${sourceLogos[event.source] ? `<img class="event-source-icon" src="${escapeAttribute(sourceLogos[event.source])}" alt="" loading="lazy">` : ""}
+          <h3>${escapeHtml(event.title)}</h3>
+        </div>
         <div class="event-meta">
           <span>${escapeHtml(formatTime(event.startsAt))}</span>
           <span>${escapeHtml(event.venue ?? "Venue TBC")}</span>
+          ${isSoldOut(event) ? '<span class="sold-out-badge">Sold out</span>' : ""}
           ${outsideDublin ? `<span class="location-warning">Outside Dublin: ${escapeHtml(event.city)}</span>` : ""}
-          ${event.category ? `<span>${escapeHtml(event.category)}</span>` : ""}
+          ${event.category ? categoryBadge(event.category) : ""}
         </div>
       </div>
       <div class="event-actions">
         <span class="source-tag">${escapeHtml(sourceLabels[event.source] ?? event.source)}</span>
-        <a class="whatsapp-button icon-only" href="${escapeAttribute(buildWhatsAppUrl(event))}" target="_blank" rel="noreferrer" aria-label="Share ${escapeAttribute(event.title)} on WhatsApp" title="Share on WhatsApp" data-share-action>
-          ${whatsAppIcon()}
-        </a>
+        <span class="event-share-slot">
+          ${isSoldOut(event) ? '<span class="sold-out-action" aria-label="Sold out">Sold out</span>' : `
+            <a class="whatsapp-button icon-only" href="${escapeAttribute(buildWhatsAppUrl(event))}" target="_blank" rel="noreferrer" aria-label="Share ${escapeAttribute(event.title)} on WhatsApp" title="Share on WhatsApp" data-share-action>
+              ${whatsAppIcon()}
+            </a>
+          `}
+        </span>
       </div>
     `;
     row.addEventListener("click", () => selectEvent(event.sourceEventId));
@@ -306,30 +410,66 @@ function renderDetail(event) {
   }
 
   elements.eventDetail.className = "event-detail";
+  elements.eventDetail.style.setProperty("--source-accent", sourceColors[event.source] ?? "var(--admin-blue)");
   elements.eventDetail.innerHTML = `
     ${event.imageUrl ? `<img class="detail-image" src="${escapeAttribute(event.imageUrl)}" alt="">` : ""}
-    <h2>${escapeHtml(event.title)}</h2>
+    <div class="detail-title-line">
+      ${sourceLogos[event.source] ? `<img class="detail-source-icon" src="${escapeAttribute(sourceLogos[event.source])}" alt="">` : ""}
+      <h2>${escapeHtml(event.title)}</h2>
+    </div>
     <dl class="detail-grid">
       <dt>Date</dt><dd>${escapeHtml(formatLongDate(event.startsAt))}</dd>
       <dt>Time</dt><dd>${escapeHtml(formatTime(event.startsAt))}</dd>
       <dt>Venue</dt><dd>${escapeHtml(event.venue ?? "Venue TBC")}</dd>
       ${isOutsideDublin(event) ? `<dt>Location</dt><dd><span class="location-warning">Outside Dublin: ${escapeHtml(event.city)}</span></dd>` : ""}
       <dt>Source</dt><dd>${escapeHtml(sourceLabels[event.source] ?? event.source)}</dd>
-      ${event.category ? `<dt>Category</dt><dd>${escapeHtml(event.category)}</dd>` : ""}
-      ${event.status ? `<dt>Status</dt><dd>${escapeHtml(event.status)}</dd>` : ""}
+      ${event.category ? `<dt>Category</dt><dd>${categoryBadge(event.category)}</dd>` : ""}
+      ${event.status ? `<dt>Status</dt><dd>${isSoldOut(event) ? '<span class="sold-out-badge">Sold out</span>' : escapeHtml(formatStatus(event.status))}</dd>` : ""}
     </dl>
     <div class="detail-actions">
       ${event.url ? `<a class="detail-link" href="${escapeAttribute(event.url)}" target="_blank" rel="noreferrer">Open event</a>` : ""}
-      <a class="whatsapp-button" href="${escapeAttribute(buildWhatsAppUrl(event))}" target="_blank" rel="noreferrer">
-        ${whatsAppIcon()}
-        <span>Share</span>
-      </a>
+      ${isSoldOut(event) ? '<span class="sold-out-action detail-sold-out" aria-label="Sold out">Sold out</span>' : `
+        <a class="whatsapp-button" href="${escapeAttribute(buildWhatsAppUrl(event))}" target="_blank" rel="noreferrer">
+          ${whatsAppIcon()}
+          <span>Share</span>
+        </a>
+      `}
     </div>
   `;
 }
 
 function isOutsideDublin(event) {
   return Boolean(event.city) && !event.city.toLowerCase().includes("dublin");
+}
+
+function isSoldOut(event) {
+  const status = event.status?.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return status?.endsWith("soldout") === true;
+}
+
+function formatStatus(status) {
+  return status.replaceAll("-", " ").replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
+}
+
+function categoryBadge(category) {
+  return `<span class="category-badge category-${categoryTone(category)}">${escapeHtml(category)}</span>`;
+}
+
+function categoryTone(category) {
+  const value = category.toLowerCase();
+
+  if (value.includes("comedy") || value.includes("stand-up")) return "comedy";
+  if (value.includes("classical") || value.includes("recital")) return "classical";
+  if (value.includes("music") || value.includes("orchestra") || value.includes("traditional") || value.includes("popular")) return "music";
+  if (value.includes("theatre") || value.includes("theater") || value.includes("storytelling")) return "theatre";
+  if (value.includes("education")) return "education";
+  if (value.includes("tour") || value.includes("talk") || value.includes("lecture") || value.includes("reading")) return "talks";
+  if (value.includes("dance")) return "dance";
+  if (value.includes("family")) return "family";
+  if (value.includes("sport")) return "sport";
+  if (value.includes("festival")) return "festival";
+  if (value.includes("circus")) return "circus";
+  return "general";
 }
 
 function setLoading() {

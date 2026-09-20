@@ -198,7 +198,9 @@ public sealed class EventbriteOrganizationEventSource(
             ImageUrl = item.Property("logo")?.String("url"),
             Category = item.String("format_id"),
             Currency = ticketAvailability?.String("currency"),
-            Status = item.String("status")
+            Status = ticketAvailability?.Boolean("is_sold_out") == true
+                ? "sold-out"
+                : item.String("status")
         };
     }
 }

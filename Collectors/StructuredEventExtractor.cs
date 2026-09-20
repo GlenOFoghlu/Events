@@ -90,8 +90,29 @@ internal static partial class StructuredEventExtractor
             PriceMin = offers?.Decimal("lowPrice") ?? offers?.Decimal("price"),
             PriceMax = offers?.Decimal("highPrice"),
             Currency = offers?.String("priceCurrency"),
-            Status = element.String("eventStatus")
+            Status = IsSoldOut(offers) ? "sold-out" : element.String("eventStatus")
         });
+    }
+
+    private static bool IsSoldOut(JsonElement? offers)
+    {
+        if (offers is null)
+        {
+            return false;
+        }
+
+        if (offers.Value.ValueKind == JsonValueKind.Array)
+        {
+            return offers.Value.EnumerateArray().Any(IsSoldOutOffer);
+        }
+
+        return IsSoldOutOffer(offers.Value);
+    }
+
+    private static bool IsSoldOutOffer(JsonElement offer)
+    {
+        var availability = offer.String("availability");
+        return availability?.EndsWith("SoldOut", StringComparison.OrdinalIgnoreCase) == true;
     }
 
     [GeneratedRegex("<script[^>]+type=[\"']application/ld\\+json[\"'][^>]*>(?<json>.*?)</script>", RegexOptions.IgnoreCase | RegexOptions.Singleline)]

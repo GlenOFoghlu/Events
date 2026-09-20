@@ -10,7 +10,10 @@ public sealed class EventNormalizer
     {
         return events
             .GroupBy(DedupeKey)
-            .Select(group => group.OrderByDescending(CompletenessScore).First())
+            .Select(group => group
+                .OrderByDescending(item => SourcePriority(item.Source))
+                .ThenByDescending(CompletenessScore)
+                .First())
             .OrderBy(item => item.StartsAt)
             .ThenBy(item => item.Title)
             .ToArray();
@@ -33,6 +36,31 @@ public sealed class EventNormalizer
         if (!string.IsNullOrWhiteSpace(item.Status)) score++;
         if (item.PriceMin.HasValue || item.PriceMax.HasValue) score++;
         return score;
+    }
+
+    private static int SourcePriority(string source)
+    {
+        return source switch
+        {
+            "3olympia" or
+            "abbey-theatre" or
+            "axis-ballymun" or
+            "button-factory" or
+            "civic-theatre" or
+            "draiocht" or
+            "fringefest" or
+            "gaiety-theatre" or
+            "gate-theatre" or
+            "mill-theatre" or
+            "national-concert-hall" or
+            "pavilion-theatre" or
+            "rte-orchestra" or
+            "smock-alley" or
+            "vicar-street" => 30,
+            "mcd" => 20,
+            "ticketmaster" => 10,
+            _ => 0
+        };
     }
 
     private static string Slug(string value)

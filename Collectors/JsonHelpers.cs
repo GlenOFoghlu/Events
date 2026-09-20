@@ -66,4 +66,21 @@ internal static class JsonHelpers
             ? value
             : null;
     }
+
+    public static bool? Boolean(this JsonElement element, string propertyName)
+    {
+        if (element.ValueKind != JsonValueKind.Object
+            || !element.TryGetProperty(propertyName, out var property))
+        {
+            return null;
+        }
+
+        return property.ValueKind switch
+        {
+            JsonValueKind.True => true,
+            JsonValueKind.False => false,
+            JsonValueKind.String when bool.TryParse(property.GetString(), out var value) => value,
+            _ => null
+        };
+    }
 }

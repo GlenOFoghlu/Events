@@ -34,25 +34,6 @@ public sealed class WhatsOnDublinCandidateSource : CandidateListingSource
     public override string Description => "What's On Dublin gig-focused listings.";
 }
 
-public sealed class McdCandidateSource : CandidateListingSource
-{
-    public override string Name => "mcd";
-    public override string Description => "MCD event calendar. Server-side scraping may be blocked by Cloudflare; prefer permission, feed access, or overlapping Ticketmaster/Evensos listings.";
-
-    public override Task<EventSourceResult> CollectAsync(EventWindow window, CancellationToken cancellationToken)
-    {
-        return Task.FromResult(EventSourceResult.Empty(
-            Name,
-            "MCD is listed as a candidate, but mcd.ie blocked a server-side calendar fetch with Cloudflare. Do not rely on direct scraping without permission or an approved access path."));
-    }
-}
-
-public sealed class GateTheatreCandidateSource : CandidateListingSource
-{
-    public override string Name => "gate-theatre";
-    public override string Description => "Gate Theatre Dublin What's On listings.";
-}
-
 public sealed class WhelansCandidateSource : CandidateListingSource
 {
     public override string Name => "whelans";

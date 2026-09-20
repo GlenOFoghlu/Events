@@ -45,6 +45,7 @@
 /Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/xzeir099h4-ckr7ohxaf5.gz
 /Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/am5963zm68-lvusj0gl6t.gz
 /Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/rdsqnjgdog-hs45jnx8yb.gz
-/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-umrp42gwbm.gz
-/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-7blh3snjma.gz
-/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-2zqs0xklc2.gz
+/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/DublinEventsCollector.sourcelink.json
+/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-mo878cit0l.gz
+/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-wfgracs2ju.gz
+/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-3ltr7rbp8v.gz

@@ -11,6 +11,7 @@ public sealed class TicketmasterEventSource(
     IHttpClientFactory httpClientFactory,
     IOptions<CollectorOptions> options) : IEventSource
 {
+    private const string McdPromoterId = "966";
     private static readonly string[] VenueSourcesHandledSeparately = ["3Olympia Theatre"];
 
     public string Name => "ticketmaster";
@@ -82,6 +83,11 @@ public sealed class TicketmasterEventSource(
 
     private EventItem? ParseEvent(JsonElement item)
     {
+        if (item.Array("promoters").Any(promoter => promoter.String("id") == McdPromoterId))
+        {
+            return null;
+        }
+
         var dates = item.Property("dates");
         var start = dates?.Property("start");
         var localDate = start?.String("localDate");

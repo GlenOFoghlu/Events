@@ -31,8 +31,9 @@ public sealed partial class NationalConcertHallEventSource(IHttpClientFactory ht
             }
 
             var html = await response.Content.ReadAsStringAsync(cancellationToken);
+            var cards = ExtractCards(html, window, pageUrl);
             var structured = StructuredEventExtractor.ExtractJsonLdEvents(Name, html, "National Concert Hall", window);
-            events.AddRange(structured.Count > 0 ? structured : ExtractCards(html, window, pageUrl));
+            events.AddRange(cards.Count > 0 ? cards : structured);
         }
 
         if (events.Count == 0)
