@@ -9,7 +9,8 @@ namespace DublinEventsCollector.Collectors;
 
 public sealed class McdTicketmasterEventSource(
     IHttpClientFactory httpClientFactory,
-    IOptions<CollectorOptions> options) : IEventSource
+    IOptions<CollectorOptions> options,
+    TicketmasterAboutProvider aboutProvider) : IEventSource
 {
     private const string McdPromoterId = "966";
 
@@ -26,7 +27,7 @@ public sealed class McdTicketmasterEventSource(
         }
 
         var client = httpClientFactory.CreateClient();
-        var events = new List<EventItem>();
+        var events = new List<ParsedMcdEvent>();
         var warnings = new List<string>();
 
         for (var page = 0; page < 5; page++)
@@ -45,7 +46,7 @@ public sealed class McdTicketmasterEventSource(
                 .Array("events")
                 .Where(IsMcdEvent)
                 .Select(ParseEvent)
-                .OfType<EventItem>()
+                .OfType<ParsedMcdEvent>()
                 .ToArray() ?? [];
 
             events.AddRange(pageEvents);
@@ -57,7 +58,15 @@ public sealed class McdTicketmasterEventSource(
             }
         }
 
-        return new EventSourceResult(Name, events, warnings);
+        var enrichedEvents = await Task.WhenAll(events.Select(async parsed =>
+        {
+            var about = await aboutProvider.GetAboutAsync(parsed.AttractionUrl, cancellationToken);
+            return string.IsNullOrWhiteSpace(about)
+                ? parsed.Event
+                : parsed.Event with { Blurb = about };
+        }));
+
+        return new EventSourceResult(Name, enrichedEvents, warnings);
     }
 
     private static Uri BuildUri(string apiKey, EventWindow window, int page)
@@ -82,7 +91,7 @@ public sealed class McdTicketmasterEventSource(
     private static bool IsMcdEvent(JsonElement item) =>
         item.Array("promoters").Any(promoter => promoter.String("id") == McdPromoterId);
 
-    private static EventItem? ParseEvent(JsonElement item)
+    private static ParsedMcdEvent? ParseEvent(JsonElement item)
     {
         var dates = item.Property("dates");
         var start = dates?.Property("start");
@@ -102,8 +111,12 @@ public sealed class McdTicketmasterEventSource(
         var image = item.Array("images")
             .OrderByDescending(candidate => candidate.Int32("width") ?? 0)
             .FirstOrDefault();
+        var attractionUrl = item.Property("_embedded")?
+            .Array("attractions")
+            .FirstOrDefault()
+            .String("url");
 
-        return new EventItem
+        var eventItem = new EventItem
         {
             Source = "mcd",
             SourceEventId = item.String("id") ?? item.String("url") ?? Guid.NewGuid().ToString("n"),
@@ -119,5 +132,9 @@ public sealed class McdTicketmasterEventSource(
             Currency = priceRange.String("currency"),
             Status = dates?.Property("status")?.String("code")
         };
+
+        return new ParsedMcdEvent(eventItem, attractionUrl);
     }
+
+    private sealed record ParsedMcdEvent(EventItem Event, string? AttractionUrl);
 }

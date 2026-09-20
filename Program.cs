@@ -11,6 +11,7 @@ builder.Services.AddHttpClient();
 builder.Services.Configure<CollectorOptions>(builder.Configuration.GetSection("Collector"));
 
 builder.Services.AddSingleton<EventNormalizer>();
+builder.Services.AddSingleton<TicketmasterAboutProvider>();
 builder.Services.AddSingleton<IEventSource, TicketmasterEventSource>();
 builder.Services.AddSingleton<IEventSource, ThreeOlympiaTicketmasterEventSource>();
 builder.Services.AddSingleton<IEventSource, EventbriteOrganizationEventSource>();

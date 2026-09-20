@@ -1,0 +1,56 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - strong [ref=f1e3]: Dublin Events
+    - generic [ref=f1e4]: Collector
+    - generic [ref=f1e5] [cursor=pointer]:
+      - generic [ref=f1e6]: Dark mode
+      - switch "Dark mode"
+  - main [ref=f1e8]:
+    - region "Event search controls" [ref=f1e9]:
+      - generic [ref=f1e10]:
+        - img "Dublin GAA crest" [ref=f1e12]
+        - generic [ref=f1e13]:
+          - paragraph [ref=f1e14]: Dublin
+          - heading "Events" [level=1] [ref=f1e15]
+      - button "Filters" [ref=f1e16] [cursor=pointer]:
+        - generic [aria-hidden] [ref=f1e18]: +
+    - region "Collection summary" [ref=f1e19]:
+      - generic [ref=f1e20]:
+        - generic [ref=f1e21]: "0"
+        - text: events
+      - generic [ref=f1e22]:
+        - generic [ref=f1e23]: "0"
+        - text: venues
+      - generic [ref=f1e24]:
+        - generic [ref=f1e25]: "0"
+        - text: sources
+      - paragraph
+    - region "Source status" [ref=f1e26]:
+      - tablist "Source groups" [ref=f1e27]:
+        - tab "Reported events 0" [selected] [ref=f1e28] [cursor=pointer]:
+          - text: Reported events
+          - generic [ref=f1e29]: "0"
+      - tabpanel "Source status"
+    - region "Events workspace" [ref=f1e30]:
+      - generic [ref=f1e31]:
+        - heading "Upcoming" [level=2] [ref=f1e33]
+        - list [ref=f1e34]:
+          - listitem [ref=f1e35]: Loading events...
+      - complementary "Selected event" [ref=f1e36]:
+        - paragraph [ref=f1e38]: Loading
+  - contentinfo [ref=f1e39]:
+    - generic [ref=f1e40]:
+      - generic [ref=f1e43]:
+        - strong [ref=f1e44]: Dublin Events Collector
+        - generic [ref=f1e45]: Dublin, Ireland
+      - navigation "Footer navigation" [ref=f1e46]:
+        - link "Search" [ref=f1e47] [cursor=pointer]:
+          - /url: "#filters"
+        - link "Sources" [ref=f1e48] [cursor=pointer]:
+          - /url: "#sources"
+        - link "Contact" [ref=f1e49] [cursor=pointer]:
+          - /url: mailto:glen.ofoghlu@gmail.com
+        - link "Back to top" [ref=f1e50] [cursor=pointer]:
+          - /url: "#top"
+      - paragraph [ref=f1e51]: Event details, prices and availability should be confirmed with the original ticket provider.
+      - paragraph [ref=f1e52]: © 2026 Dublin Events Collector

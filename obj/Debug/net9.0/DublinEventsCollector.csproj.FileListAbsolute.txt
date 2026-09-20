@@ -119,7 +119,7 @@
 /Users/gofoghlu/Development/dublin-events-collector/bin/Debug/net9.0/newrelic/newrelic.config
 /Users/gofoghlu/Development/dublin-events-collector/bin/Debug/net9.0/newrelic/newrelic.xsd
 /Users/gofoghlu/Development/dublin-events-collector/bin/Debug/net9.0/newrelic/x86/NewRelic.Profiler.dll
-/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-bpzckvf05c.gz
-/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-x4c2n9obly.gz
 /Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/tb6numlu7x-4nt0h1qf8a.gz
-/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-p3j2yev8wt.gz
+/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-47o8orqe6l.gz
+/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-mcso5ktnbg.gz
+/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-kvkbaqtvj5.gz

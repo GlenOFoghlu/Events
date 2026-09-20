@@ -9,7 +9,8 @@ namespace DublinEventsCollector.Collectors;
 
 public sealed class TicketmasterEventSource(
     IHttpClientFactory httpClientFactory,
-    IOptions<CollectorOptions> options) : IEventSource
+    IOptions<CollectorOptions> options,
+    TicketmasterAboutProvider aboutProvider) : IEventSource
 {
     private const string McdPromoterId = "966";
     private static readonly string[] VenueSourcesHandledSeparately = ["3Olympia Theatre"];
@@ -27,7 +28,7 @@ public sealed class TicketmasterEventSource(
         }
 
         var client = httpClientFactory.CreateClient();
-        var events = new List<EventItem>();
+        var events = new List<ParsedTicketmasterEvent>();
         var warnings = new List<string>();
 
         for (var page = 0; page < 5; page++)
@@ -47,7 +48,7 @@ public sealed class TicketmasterEventSource(
                 .Property("_embedded")?
                 .Array("events")
                 .Select(ParseEvent)
-                .OfType<EventItem>()
+                .OfType<ParsedTicketmasterEvent>()
                 .ToArray() ?? [];
 
             events.AddRange(pageEvents);
@@ -60,7 +61,15 @@ public sealed class TicketmasterEventSource(
             }
         }
 
-        return new EventSourceResult(Name, events, warnings);
+        var enrichedEvents = await Task.WhenAll(events.Select(async parsed =>
+        {
+            var about = await aboutProvider.GetAboutAsync(parsed.AttractionUrl, cancellationToken);
+            return string.IsNullOrWhiteSpace(about)
+                ? parsed.Event
+                : parsed.Event with { Blurb = about };
+        }));
+
+        return new EventSourceResult(Name, enrichedEvents, warnings);
     }
 
     private static Uri BuildUri(string apiKey, EventWindow window, int page)
@@ -81,7 +90,7 @@ public sealed class TicketmasterEventSource(
         }.Uri;
     }
 
-    private EventItem? ParseEvent(JsonElement item)
+    private ParsedTicketmasterEvent? ParseEvent(JsonElement item)
     {
         if (item.Array("promoters").Any(promoter => promoter.String("id") == McdPromoterId))
         {
@@ -116,8 +125,12 @@ public sealed class TicketmasterEventSource(
         var image = item.Array("images")
             .OrderByDescending(image => image.Property("width")?.GetInt32() ?? 0)
             .FirstOrDefault();
+        var attractionUrl = item.Property("_embedded")?
+            .Array("attractions")
+            .FirstOrDefault()
+            .String("url");
 
-        return new EventItem
+        var eventItem = new EventItem
         {
             Source = Name,
             SourceEventId = item.String("id") ?? item.String("url") ?? Guid.NewGuid().ToString("n"),
@@ -133,5 +146,9 @@ public sealed class TicketmasterEventSource(
             Currency = priceRange.String("currency"),
             Status = dates?.Property("status")?.String("code")
         };
+
+        return new ParsedTicketmasterEvent(eventItem, attractionUrl);
     }
+
+    private sealed record ParsedTicketmasterEvent(EventItem Event, string? AttractionUrl);
 }

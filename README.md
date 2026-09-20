@@ -9,9 +9,9 @@ The included workflow deploys a Docker container to a Proxmox-hosted Linux VM or
 Before deploying, confirm the destination in `.github/workflows/proxmox-deploy.yml`:
 
 ```yaml
-DEPLOY_HOST: sshvm101.ofoghlu.dev
-DEPLOY_USER: root
-DEPLOY_DIR: /root/dublin-events-collector
+DEPLOY_HOST: deploy.example.com
+DEPLOY_USER: deploy-user
+DEPLOY_DIR: /opt/dublin-events-collector
 ```
 
 Add these repository secrets under **Settings > Secrets and variables > Actions**:

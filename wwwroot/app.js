@@ -2,8 +2,14 @@ const state = {
   events: [],
   sourceResults: [],
   selectedId: null,
-  sourceStatusTab: "with-events"
+  sourceStatusTab: "with-events",
+  isRefreshing: false,
+  lastLoadedAt: 0
 };
+
+const eventCacheKey = "dublin-events-cache-v1";
+const autoRefreshIntervalMs = 15 * 60 * 1000;
+const pastEventCheckIntervalMs = 60 * 1000;
 
 const elements = {
   themeToggle: document.querySelector("#themeToggle"),
@@ -15,6 +21,7 @@ const elements = {
   sourceFilter: document.querySelector("#sourceFilter"),
   venueFilterLabel: document.querySelector("#venueFilterLabel"),
   venueFilter: document.querySelector("#venueFilter"),
+  refreshButton: document.querySelector("#refreshButton"),
   eventCount: document.querySelector("#eventCount"),
   venueCount: document.querySelector("#venueCount"),
   sourceCount: document.querySelector("#sourceCount"),
@@ -124,12 +131,11 @@ async function init() {
   initTheme();
   initFiltersDisclosure();
   setDefaultDates();
-  await loadSources();
-  await loadEvents();
+  const hasCachedEvents = restoreCachedEvents();
 
   elements.filters.addEventListener("submit", async event => {
     event.preventDefault();
-    await loadEvents();
+    await loadEvents({ preserveCurrent: state.events.length > 0 });
     if (window.matchMedia("(max-width: 640px)").matches) {
       setFiltersExpanded(false);
     }
@@ -147,6 +153,23 @@ async function init() {
       state.sourceStatusTab = tab.dataset.sourceTab;
       renderSourceStatus();
     });
+  });
+
+  await Promise.allSettled([
+    loadSources(),
+    loadEvents({ preserveCurrent: hasCachedEvents })
+  ]);
+
+  window.setInterval(() => {
+    loadEvents({ preserveCurrent: true });
+  }, autoRefreshIntervalMs);
+  window.setInterval(updatePastEventRows, pastEventCheckIntervalMs);
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible"
+      && Date.now() - state.lastLoadedAt >= autoRefreshIntervalMs) {
+      loadEvents({ preserveCurrent: state.events.length > 0 });
+    }
   });
 }
 
@@ -199,8 +222,17 @@ async function loadSources() {
   }
 }
 
-async function loadEvents() {
-  setLoading();
+async function loadEvents({ preserveCurrent = false } = {}) {
+  if (state.isRefreshing) {
+    return;
+  }
+
+  state.isRefreshing = true;
+  setRefreshState(true);
+  if (!preserveCurrent || state.events.length === 0) {
+    setLoading();
+  }
+
   const params = new URLSearchParams({
     from: elements.fromDate.value,
     to: elements.toDate.value
@@ -213,18 +245,65 @@ async function loadEvents() {
     }
 
     const data = await response.json();
-    state.events = data.events ?? [];
-    state.sourceResults = data.sourceResults ?? [];
-    state.selectedId = state.events[0]?.sourceEventId ?? null;
-    updateVenueOptions();
-    renderSummary(data);
-    renderSourceStatus();
-    renderEvents();
+    applyEventData(data);
+    cacheEventData(data);
   } catch (error) {
-    elements.eventList.innerHTML = `<li class="message">Unable to load events. ${escapeHtml(error.message)}</li>`;
-    elements.eventDetail.className = "event-detail empty";
-    elements.eventDetail.innerHTML = "<p>No event selected</p>";
+    if (state.events.length === 0) {
+      elements.eventList.innerHTML = `<li class="message">Unable to load events. ${escapeHtml(error.message)}</li>`;
+      elements.eventDetail.className = "event-detail empty";
+      elements.eventDetail.innerHTML = "<p>No event selected</p>";
+    }
+  } finally {
+    state.isRefreshing = false;
+    setRefreshState(false);
   }
+}
+
+function applyEventData(data, loadedAt = Date.now()) {
+  state.events = data.events ?? [];
+  state.sourceResults = data.sourceResults ?? [];
+  state.selectedId = state.events[0]?.sourceEventId ?? null;
+  state.lastLoadedAt = loadedAt;
+  updateVenueOptions();
+  renderSummary(data);
+  renderSourceStatus();
+  renderEvents();
+}
+
+function cacheEventData(data) {
+  try {
+    localStorage.setItem(eventCacheKey, JSON.stringify({
+      savedAt: Date.now(),
+      data
+    }));
+  } catch {
+    // Browsers can disable or limit local storage; live loading still works.
+  }
+}
+
+function restoreCachedEvents() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(eventCacheKey));
+    if (!cached?.data || !Array.isArray(cached.data.events) || cached.data.events.length === 0) {
+      return false;
+    }
+
+    applyEventData(cached.data, Number(cached.savedAt) || 0);
+    return true;
+  } catch {
+    try {
+      localStorage.removeItem(eventCacheKey);
+    } catch {
+      // Ignore storage access failures and continue with live loading.
+    }
+    return false;
+  }
+}
+
+function setRefreshState(refreshing) {
+  elements.refreshButton.disabled = refreshing;
+  elements.refreshButton.textContent = refreshing ? "Updating..." : "Refresh";
+  elements.refreshButton.setAttribute("aria-busy", String(refreshing));
 }
 
 function renderSummary(data) {
@@ -352,7 +431,12 @@ function renderEvents() {
   for (const event of filtered) {
     const row = document.createElement("li");
     const outsideDublin = isOutsideDublin(event);
-    row.className = `event-row ${event.sourceEventId === state.selectedId ? "selected" : ""}`;
+    row.className = [
+      "event-row",
+      event.sourceEventId === state.selectedId ? "selected" : "",
+      hasEventPassed(event.startsAt) ? "past-event" : ""
+    ].filter(Boolean).join(" ");
+    row.dataset.startsAt = event.startsAt;
     row.style.setProperty("--source-accent", sourceColors[event.source] ?? "var(--admin-blue)");
     row.tabIndex = 0;
     row.innerHTML = `
@@ -465,6 +549,26 @@ function isSoldOut(event) {
   return status?.endsWith("soldout") === true;
 }
 
+function hasEventPassed(value, now = new Date()) {
+  const startsAt = new Date(value);
+  if (Number.isNaN(startsAt.getTime())) {
+    return false;
+  }
+
+  if (isTimeTbc(value)) {
+    startsAt.setHours(23, 59, 59, 999);
+  }
+
+  return startsAt < now;
+}
+
+function updatePastEventRows() {
+  const now = new Date();
+  elements.eventList.querySelectorAll(".event-row[data-starts-at]").forEach(row => {
+    row.classList.toggle("past-event", hasEventPassed(row.dataset.startsAt, now));
+  });
+}
+
 function formatStatus(status) {
   return status.replaceAll("-", " ").replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
 }
@@ -518,11 +622,16 @@ function formatDay(value) {
 
 function formatTime(value) {
   const date = new Date(value);
-  if (date.getHours() === 0 && date.getMinutes() === 0) {
+  if (isTimeTbc(value)) {
     return "Time TBC";
   }
 
   return new Intl.DateTimeFormat("en-IE", { hour: "2-digit", minute: "2-digit" }).format(date);
+}
+
+function isTimeTbc(value) {
+  const date = new Date(value);
+  return date.getHours() === 0 && date.getMinutes() === 0;
 }
 
 function buildWhatsAppUrl(event) {
