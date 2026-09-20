@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "NewRelic.Agent": {
+              "target": "Package",
+              "version": "[10.55.0, )"
             }
           },
           "imports": [

@@ -49,7 +49,7 @@ docker compose up -d --build
 Open:
 
 ```text
-http://your-proxmox-vm-ip:8080/
+http://your-proxmox-vm-ip:8081/
 ```
 
 Useful Docker commands:
@@ -61,7 +61,7 @@ docker compose pull
 docker compose down
 ```
 
-For production, put a reverse proxy such as Nginx Proxy Manager, Caddy, Traefik, or an existing Proxmox-hosted proxy in front of port `8080` and terminate HTTPS there.
+For production, put a reverse proxy such as Nginx Proxy Manager, Caddy, Traefik, or an existing Proxmox-hosted proxy in front of host port `8081` and terminate HTTPS there. The container continues to listen internally on port `8080`.
 
 ## Deploy to Proxmox with GitHub Actions
 
@@ -83,14 +83,21 @@ PROD_ENV
 `PROD_ENV` should contain the production `.env` content, for example:
 
 ```bash
-APP_PORT=8080
+APP_PORT=8081
 COLLECTOR__TICKETMASTERAPIKEY=your-ticketmaster-key
 COLLECTOR__EVENTBRITETOKEN=your-eventbrite-token
 COLLECTOR__EVENTBRITEORGANIZATIONIDS__0=
 COLLECTOR__EVENTBRITEVENUEIDS__0=
 COLLECTOR__ENABLEEVENSOS=true
 COLLECTOR__ENABLETICKTS=false
+NEW_RELIC_ENABLED=1
+NEW_RELIC_LICENSE_KEY=your-new-relic-license-key
+NEW_RELIC_APP_NAME=Dublin Events Collector
+NEW_RELIC_DISTRIBUTED_TRACING_ENABLED=true
+NEW_RELIC_LOG_CONSOLE=1
 ```
+
+New Relic APM uses the official `NewRelic.Agent` package. Keep `NEW_RELIC_ENABLED=0` when no license key is configured. In production, set it to `1`, provide the account license key, and redeploy. The service should begin appearing in New Relic after it receives traffic.
 
 The workflow uploads a release bundle, writes `.env`, swaps the deployment directory atomically, runs:
 

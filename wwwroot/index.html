@@ -11,7 +11,7 @@
         ?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     })();
   </script>
-  <link rel="stylesheet" href="/styles.css?v=20260920-footer">
+  <link rel="stylesheet" href="/styles.css?v=20260920-mobile-dates">
 </head>
 <body id="top">
   <header class="admin-bar">
@@ -37,11 +37,11 @@
       </div>
 
       <form id="filters" class="filters">
-        <label>
+        <label class="filter-date filter-date--from">
           <span>From</span>
           <input id="fromDate" name="from" type="date">
         </label>
-        <label>
+        <label class="filter-date filter-date--to">
           <span>To</span>
           <input id="toDate" name="to" type="date">
         </label>

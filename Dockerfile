@@ -14,7 +14,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 
 ENV ASPNETCORE_URLS=http://+:8080
-ENV DOTNET_EnableDiagnostics=0
 
 COPY --from=build /app/publish ./
 

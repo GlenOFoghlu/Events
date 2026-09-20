@@ -7,7 +7,7 @@ services:
     container_name: dublin-events-collector
     restart: unless-stopped
     ports:
-      - "${APP_PORT:-8080}:8080"
+      - "${APP_PORT:-8081}:8080"
     environment:
       ASPNETCORE_ENVIRONMENT: Production
       ASPNETCORE_URLS: http://+:8080
@@ -17,3 +17,11 @@ services:
       Collector__EventbriteVenueIds__0: ${COLLECTOR__EVENTBRITEVENUEIDS__0:-}
       Collector__EnableEvensos: ${COLLECTOR__ENABLEEVENSOS:-true}
       Collector__EnableTickts: ${COLLECTOR__ENABLETICKTS:-false}
+      CORECLR_ENABLE_PROFILING: ${NEW_RELIC_ENABLED:-0}
+      CORECLR_PROFILER: "{36032161-FFC0-4B61-B559-F6C5D41BAE5A}"
+      CORECLR_NEWRELIC_HOME: /app/newrelic
+      CORECLR_PROFILER_PATH: /app/newrelic/libNewRelicProfiler.so
+      NEW_RELIC_LICENSE_KEY: ${NEW_RELIC_LICENSE_KEY:-}
+      NEW_RELIC_APP_NAME: ${NEW_RELIC_APP_NAME:-Dublin Events Collector}
+      NEW_RELIC_DISTRIBUTED_TRACING_ENABLED: ${NEW_RELIC_DISTRIBUTED_TRACING_ENABLED:-true}
+      NEW_RELIC_LOG_CONSOLE: ${NEW_RELIC_LOG_CONSOLE:-1}

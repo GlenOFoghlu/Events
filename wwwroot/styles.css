@@ -1006,7 +1006,16 @@ html[data-theme="dark"] .sold-out-action {
     font-size: 32px;
   }
 
-  .filters,
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 10px;
+  }
+
+  .filters > label:not(.filter-date),
+  .filters > button {
+    grid-column: 1 / -1;
+  }
+
   .summary-strip {
     grid-template-columns: 1fr;
   }
