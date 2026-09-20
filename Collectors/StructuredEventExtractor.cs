@@ -81,6 +81,7 @@ internal static partial class StructuredEventExtractor
             Source = source,
             SourceEventId = element.String("@id") ?? element.String("url") ?? $"{source}-{events.Count}",
             Title = element.String("name") ?? $"Untitled {source} event",
+            Blurb = VenueHtmlParsing.Blurb(element.String("description")),
             Venue = location?.String("name") ?? defaultVenue,
             StartsAt = start.Value,
             EndsAt = DublinDateTime.ParseIsoOrLocal(element.String("endDate")),

@@ -72,6 +72,7 @@ public sealed partial class DublinFringeFestivalEventSource(IHttpClientFactory h
                         Source = Name,
                         SourceEventId = $"fringefest-{eventId}",
                         Title = title,
+                        Blurb = VenueHtmlParsing.Blurb(description),
                         Venue = VenueWithLayout(venueName, Text(eventElement.Element("venue_layout"))),
                         StartsAt = startsAt.Value,
                         Url = Text(eventElement.Element("url")) ?? Text(show.Element("url")),

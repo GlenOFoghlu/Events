@@ -122,6 +122,7 @@ public sealed class TicketmasterEventSource(
             Source = Name,
             SourceEventId = item.String("id") ?? item.String("url") ?? Guid.NewGuid().ToString("n"),
             Title = item.String("name") ?? "Untitled Ticketmaster event",
+            Blurb = VenueHtmlParsing.Blurb(item.String("info") ?? item.String("pleaseNote")),
             Venue = venue,
             StartsAt = DublinDateTime.FromLocal(date, time),
             Url = item.String("url"),

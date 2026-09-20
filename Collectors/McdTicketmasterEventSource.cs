@@ -108,6 +108,7 @@ public sealed class McdTicketmasterEventSource(
             Source = "mcd",
             SourceEventId = item.String("id") ?? item.String("url") ?? Guid.NewGuid().ToString("n"),
             Title = item.String("name") ?? "Untitled MCD event",
+            Blurb = VenueHtmlParsing.Blurb(item.String("info") ?? item.String("pleaseNote")),
             Venue = venue,
             StartsAt = DublinDateTime.FromLocal(date, time),
             Url = item.String("url"),

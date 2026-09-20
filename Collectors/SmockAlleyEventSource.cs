@@ -72,6 +72,7 @@ public sealed partial class SmockAlleyEventSource(IHttpClientFactory httpClientF
                         Source = Name,
                         SourceEventId = $"smock-{eventId}",
                         Title = title,
+                        Blurb = VenueHtmlParsing.Blurb(description),
                         Venue = VenueWithLayout(venueName, Text(eventElement.Element("venue_layout"))),
                         StartsAt = startsAt.Value,
                         Url = Text(eventElement.Element("url")) ?? Text(show.Element("url")),

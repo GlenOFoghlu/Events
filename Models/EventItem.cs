@@ -5,6 +5,7 @@ public sealed record EventItem
     public required string Source { get; init; }
     public required string SourceEventId { get; init; }
     public required string Title { get; init; }
+    public string? Blurb { get; init; }
     public string? Venue { get; init; }
     public string City { get; init; } = "Dublin";
     public required DateTimeOffset StartsAt { get; init; }

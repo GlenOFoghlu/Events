@@ -72,6 +72,7 @@ public sealed partial class GateTheatreEventSource(IHttpClientFactory httpClient
         metadata.TryGetValue(NormalizeTitle(title), out var productionMetadata);
         var imageUrl = productionMetadata?.ImageUrl ?? production.String("imageUrl") ?? production.String("thumbnailUrl");
         var url = productionMetadata?.Url ?? BuildBookingUrl(eventId);
+        var blurb = VenueHtmlParsing.Blurb(production.String("description") ?? production.String("shortDescription"));
         var isOnSale = production.Boolean("isOnSale") == true;
         var events = new List<EventItem>();
 
@@ -91,6 +92,7 @@ public sealed partial class GateTheatreEventSource(IHttpClientFactory httpClient
                 Source = Name,
                 SourceEventId = instanceId,
                 Title = title,
+                Blurb = blurb,
                 Venue = "Gate Theatre",
                 StartsAt = startsAt.Value,
                 Url = url,

@@ -7,6 +7,7 @@ const state = {
 
 const elements = {
   themeToggle: document.querySelector("#themeToggle"),
+  filtersToggle: document.querySelector("#filtersToggle"),
   filters: document.querySelector("#filters"),
   fromDate: document.querySelector("#fromDate"),
   toDate: document.querySelector("#toDate"),
@@ -14,7 +15,6 @@ const elements = {
   sourceFilter: document.querySelector("#sourceFilter"),
   venueFilterLabel: document.querySelector("#venueFilterLabel"),
   venueFilter: document.querySelector("#venueFilter"),
-  sortOrder: document.querySelector("#sortOrder"),
   eventCount: document.querySelector("#eventCount"),
   venueCount: document.querySelector("#venueCount"),
   sourceCount: document.querySelector("#sourceCount"),
@@ -122,6 +122,7 @@ init();
 
 async function init() {
   initTheme();
+  initFiltersDisclosure();
   setDefaultDates();
   await loadSources();
   await loadEvents();
@@ -129,6 +130,9 @@ async function init() {
   elements.filters.addEventListener("submit", async event => {
     event.preventDefault();
     await loadEvents();
+    if (window.matchMedia("(max-width: 640px)").matches) {
+      setFiltersExpanded(false);
+    }
   });
 
   elements.searchText.addEventListener("input", renderEvents);
@@ -138,13 +142,30 @@ async function init() {
     renderEvents();
   });
   elements.venueFilter.addEventListener("change", renderEvents);
-  elements.sortOrder.addEventListener("change", renderEvents);
   elements.sourceTabs.forEach(tab => {
     tab.addEventListener("click", () => {
       state.sourceStatusTab = tab.dataset.sourceTab;
       renderSourceStatus();
     });
   });
+}
+
+function initFiltersDisclosure() {
+  const mobile = window.matchMedia("(max-width: 640px)");
+
+  const applyViewport = () => setFiltersExpanded(!mobile.matches);
+  applyViewport();
+  mobile.addEventListener("change", applyViewport);
+
+  elements.filtersToggle.addEventListener("click", () => {
+    setFiltersExpanded(elements.filtersToggle.getAttribute("aria-expanded") !== "true");
+  });
+}
+
+function setFiltersExpanded(expanded) {
+  const isMobile = window.matchMedia("(max-width: 640px)").matches;
+  elements.filters.hidden = isMobile && !expanded;
+  elements.filtersToggle.setAttribute("aria-expanded", String(!isMobile || expanded));
 }
 
 function initTheme() {
@@ -260,7 +281,9 @@ function updateSourceTabs() {
   const withoutEvents = state.sourceResults.length - withEvents;
 
   elements.sourcesWithEventsCount.textContent = withEvents;
-  elements.sourcesWithoutEventsCount.textContent = withoutEvents;
+  if (elements.sourcesWithoutEventsCount) {
+    elements.sourcesWithoutEventsCount.textContent = withoutEvents;
+  }
 
   elements.sourceTabs.forEach(tab => {
     const isActive = tab.dataset.sourceTab === state.sourceStatusTab;
@@ -308,7 +331,7 @@ function renderEvents() {
   const filtered = state.events.filter(event => {
     const matchesSource = !source || event.source === source;
     const matchesVenue = !venue || event.venue === venue;
-    const searchable = `${event.title} ${event.venue ?? ""} ${event.city ?? ""}`.toLowerCase();
+    const searchable = `${event.title} ${event.blurb ?? ""} ${event.venue ?? ""} ${event.city ?? ""}`.toLowerCase();
     const matchesQuery = !query || searchable.includes(query);
     return matchesSource && matchesVenue && matchesQuery;
   }).sort(compareEvents);
@@ -378,12 +401,6 @@ function renderEvents() {
 }
 
 function compareEvents(left, right) {
-  if (elements.sortOrder.value === "venue") {
-    return compareText(left.venue ?? "Venue TBC", right.venue ?? "Venue TBC")
-      || compareDate(left.startsAt, right.startsAt)
-      || compareText(left.title, right.title);
-  }
-
   return compareDate(left.startsAt, right.startsAt)
     || compareText(left.venue ?? "Venue TBC", right.venue ?? "Venue TBC")
     || compareText(left.title, right.title);
@@ -417,6 +434,7 @@ function renderDetail(event) {
       ${sourceLogos[event.source] ? `<img class="detail-source-icon" src="${escapeAttribute(sourceLogos[event.source])}" alt="">` : ""}
       <h2>${escapeHtml(event.title)}</h2>
     </div>
+    ${event.blurb ? `<p class="detail-blurb">${escapeHtml(event.blurb)}</p>` : ""}
     <dl class="detail-grid">
       <dt>Date</dt><dd>${escapeHtml(formatLongDate(event.startsAt))}</dd>
       <dt>Time</dt><dd>${escapeHtml(formatTime(event.startsAt))}</dd>
@@ -519,12 +537,7 @@ function buildWhatsAppUrl(event) {
 }
 
 function whatsAppIcon() {
-  return `
-    <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-      <path d="M16 3.2A12.74 12.74 0 0 0 5 22.35L3.8 28.8l6.57-1.15A12.74 12.74 0 1 0 16 3.2Z" fill="currentColor"/>
-      <path d="M22.95 18.93c-.38-.19-2.25-1.11-2.6-1.24-.35-.13-.6-.19-.86.19-.25.37-.99 1.23-1.21 1.48-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.05-1.88a11.4 11.4 0 0 1-2.1-2.62c-.22-.38-.02-.58.17-.77.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.09-.19-.85-2.04-1.17-2.8-.31-.74-.62-.64-.85-.65h-.73c-.25 0-.66.09-1 .47-.35.38-1.32 1.29-1.32 3.15s1.35 3.65 1.54 3.9c.19.25 2.66 4.06 6.44 5.69.9.39 1.6.62 2.15.79.9.29 1.72.25 2.37.15.72-.11 2.25-.92 2.57-1.81.32-.89.32-1.65.22-1.81-.09-.16-.35-.25-.73-.44Z" fill="#fff"/>
-    </svg>
-  `;
+  return '<img class="whatsapp-icon" src="/assets/branding/whatsapp.svg?v=dashboard-icons" alt="" aria-hidden="true">';
 }
 
 function escapeHtml(value) {

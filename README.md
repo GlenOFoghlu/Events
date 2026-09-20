@@ -1,95 +1,42 @@
 # Dublin Events Collector
 
-A small .NET 9 API for collecting upcoming Dublin events from API-backed providers and selected venue pages.
+A .NET 9 web application that collects upcoming events from Dublin ticketing services and venue listings. The default event window is 30 days.
 
-The default event window is the next 30 days. You can override it with `from`, `to`, or `days` query parameters.
+## Deploy with GitHub Actions
 
-## Run it
+The included workflow deploys a Docker container to a Proxmox-hosted Linux VM or LXC through Cloudflare Access SSH.
 
-```bash
-cd /Users/gofoghlu/Development/dublin-events-collector
-dotnet run
+Before deploying, confirm the destination in `.github/workflows/proxmox-deploy.yml`:
+
+```yaml
+DEPLOY_HOST: sshvm101.ofoghlu.dev
+DEPLOY_USER: root
+DEPLOY_DIR: /root/dublin-events-collector
 ```
 
-Then open:
+Add these repository secrets under **Settings > Secrets and variables > Actions**:
 
-```text
-http://localhost:5281/
-```
+| Secret | Purpose |
+| --- | --- |
+| `SSH_PRIVATE_KEY` | Private key used by GitHub Actions to connect to the deployment host |
+| `CF_CLIENT_ID` | Cloudflare Access service-token client ID |
+| `CF_CLIENT_SECRET` | Cloudflare Access service-token secret |
+| `PROD_ENV` | Complete production environment file |
 
-The UI calls the API for the selected date range. You can still call the JSON endpoint directly:
+The matching public SSH key must be present in the deployment user's `~/.ssh/authorized_keys` file.
 
-```text
-http://localhost:5281/events?from=2026-09-09&to=2026-10-09
-```
+Set `PROD_ENV` to:
 
-## Run with Docker
+```env
+APP_PORT=8123
 
-The app is container-ready for a Proxmox VM or LXC that has Docker installed.
-
-Create a local environment file:
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and add your real API keys:
-
-```bash
-COLLECTOR__TICKETMASTERAPIKEY=your-ticketmaster-key
-COLLECTOR__EVENTBRITETOKEN=your-eventbrite-token
-```
-
-Build and start the container:
-
-```bash
-docker compose up -d --build
-```
-
-Open:
-
-```text
-http://your-proxmox-vm-ip:8081/
-```
-
-Useful Docker commands:
-
-```bash
-docker compose logs -f
-docker compose restart
-docker compose pull
-docker compose down
-```
-
-For production, put a reverse proxy such as Nginx Proxy Manager, Caddy, Traefik, or an existing Proxmox-hosted proxy in front of host port `8081` and terminate HTTPS there. The container continues to listen internally on port `8080`.
-
-## Deploy to Proxmox with GitHub Actions
-
-This repo includes `.github/workflows/proxmox-deploy.yml`, which deploys through Cloudflare Access SSH to:
-
-```text
-/root/dublin-events-collector
-```
-
-Configure these GitHub repository secrets:
-
-```text
-SSH_PRIVATE_KEY
-CF_CLIENT_ID
-CF_CLIENT_SECRET
-PROD_ENV
-```
-
-`PROD_ENV` should contain the production `.env` content, for example:
-
-```bash
-APP_PORT=8081
-COLLECTOR__TICKETMASTERAPIKEY=your-ticketmaster-key
-COLLECTOR__EVENTBRITETOKEN=your-eventbrite-token
+COLLECTOR__TICKETMASTERAPIKEY=your-ticketmaster-consumer-key
+COLLECTOR__EVENTBRITETOKEN=
 COLLECTOR__EVENTBRITEORGANIZATIONIDS__0=
 COLLECTOR__EVENTBRITEVENUEIDS__0=
 COLLECTOR__ENABLEEVENSOS=true
 COLLECTOR__ENABLETICKTS=false
+
 NEW_RELIC_ENABLED=1
 NEW_RELIC_LICENSE_KEY=your-new-relic-license-key
 NEW_RELIC_APP_NAME=Dublin Events Collector
@@ -97,75 +44,87 @@ NEW_RELIC_DISTRIBUTED_TRACING_ENABLED=true
 NEW_RELIC_LOG_CONSOLE=1
 ```
 
-New Relic APM uses the official `NewRelic.Agent` package. Keep `NEW_RELIC_ENABLED=0` when no license key is configured. In production, set it to `1`, provide the account license key, and redeploy. The service should begin appearing in New Relic after it receives traffic.
+Eventbrite and New Relic values may be left blank when those services are not required. Set `NEW_RELIC_ENABLED=0` when no New Relic license key is configured.
 
-The workflow uploads a release bundle, writes `.env`, swaps the deployment directory atomically, runs:
+Push to `main` or run **Proxmox Deploy via Cloudflare** manually from the repository's Actions page. The deployed site is available on the configured host port, for example:
+
+```text
+http://your-proxmox-host:8123/
+```
+
+If a reverse proxy or Cloudflare Tunnel is used, point it to that host and port.
+
+## Deploy with Docker Compose
+
+On any Docker host:
 
 ```bash
-docker compose --env-file .env up -d --build
+cp .env.example .env
+# Add the required keys to .env, then run:
+docker compose up -d --build
 ```
 
-and prunes old Docker images.
-
-## Configure sources
-
-Use environment variables for API keys:
+Useful checks:
 
 ```bash
-export COLLECTOR__TICKETMASTERAPIKEY="your-ticketmaster-key"
-export COLLECTOR__EVENTBRITETOKEN="your-eventbrite-token"
-export COLLECTOR__EVENTBRITEORGANIZATIONIDS__0="known-organization-id"
-export COLLECTOR__EVENTBRITEVENUEIDS__0="known-venue-id"
+docker compose ps
+docker compose logs -f dublin-events
 ```
 
-You can also set the same values under the `Collector` section in `appsettings.Development.json` for local testing. Avoid committing real keys.
+## Application Endpoints
 
-## Current sources
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/` | Web interface |
+| `GET` | `/events` | Collected events and per-source results |
+| `GET` | `/api/events` | Alias of `/events` |
+| `GET` | `/sources` | Configured source names and status information |
+| `GET` | `/api/sources` | Alias of `/sources` |
 
-- `ticketmaster`: uses the Ticketmaster Discovery API for Dublin, Ireland.
-- `3olympia`: uses the Ticketmaster Discovery API filtered to 3Olympia Theatre.
-- `evensos`: reads the Evensos Dublin JSON-LD feed.
-- `fringefest`: reads the Dublin Fringe Festival Ticketsolve XML feed.
-- `tickts`: optional JSON/iCal feed source. Disabled by default until the Dublin feed has events.
-- `eventbrite`: pulls events from known Eventbrite organization IDs and/or known Eventbrite venue IDs. Broad public Eventbrite search is not available through their current official public API.
-- `national-concert-hall`: reads the public National Concert Hall listing.
-- `rte-orchestra`: reads the public RTÉ Orchestra What's On listing and marks events outside Dublin.
-- `smock-alley`: reads the public Smock Alley Ticketsolve XML feed.
-- `button-factory`: reads the per-event ICS links from the Button Factory shows page.
-- `dublin-ie`, `entertainment-ie`, `whats-on-dublin`, `mcd`: candidate listing sources shown in the UI so they can be added deliberately after checking terms and page structure.
-- `gaiety-theatre`, `abbey-theatre`, `pavilion-theatre`, `vicar-street`: public venue listing scrapers.
-- `gate-theatre`, `whelans`, `the-academy`, `the-grand-social`, `workmans-club`: candidate venue sources for Dublin theatre and gig listings.
-- Bord Gáis Energy Theatre is covered through Ticketmaster rather than a separate source.
+The event endpoints accept:
 
-## Add another venue
+| Parameter | Format | Description |
+| --- | --- | --- |
+| `from` | `YYYY-MM-DD` | First date to include; defaults to today |
+| `to` | `YYYY-MM-DD` | Last date to include |
+| `days` | `1` to `180` | Window length when `to` is omitted; defaults to `30` |
 
-Create a new class in `Collectors/` that implements `IEventSource`, then register it in `Program.cs`:
+Example:
 
-```csharp
-builder.Services.AddSingleton<IEventSource, YourVenueEventSource>();
+```text
+GET /api/events?from=2026-09-20&to=2026-10-20
 ```
 
-Each source should return normalized `EventItem` objects. The central collector dedupes events by title, venue, and start date.
+## External Endpoints Accessed
 
-## Eventbrite venue IDs
+The deployed service makes outbound HTTPS requests to the following endpoints.
 
-Eventbrite supports `GET /venues/{venue_id}/events/`, so this app can pull from a maintained list of venue IDs:
+### Ticketing APIs and feeds
 
-```bash
-export COLLECTOR__EVENTBRITEVENUEIDS__0="123456789"
-export COLLECTOR__EVENTBRITEVENUEIDS__1="987654321"
-```
+- `https://app.ticketmaster.com/discovery/v2/events.json`
+- `https://www.eventbriteapi.com/v3/users/me/organizations/`
+- `https://www.eventbriteapi.com/v3/organizations/{organizationId}/events/`
+- `https://www.eventbriteapi.com/v3/venues/{venueId}/events/`
+- `https://www.evensos.com/events/dublin.json`
+- `https://tickts.ie/feed/whats-on/dublin.json` when Tickts is enabled
+- `https://fringefest.ticketsolve.com/shows.xml`
+- `https://smockalley.ticketsolve.com/shows.xml`
+- `https://draiocht.ticketsolve.com/shows.xml`
+- `https://civictheatre.ticketsolve.com/shows.xml`
+- `https://milltheatre.ticketsolve.com/shows.xml`
+- `https://axisballymun.ticketsolve.com/shows.xml`
+- `https://tickets.gatetheatre.ie/thegatedublin/api/v3/events`
+- Gate Theatre event instance and availability endpoints under the same API
 
-Eventbrite does not provide a broad public Dublin venue search API. Practical ways to find venue IDs are:
+### Venue listings
 
-- Retrieve a known Eventbrite event and inspect its expanded venue data.
-- Pull events from an Eventbrite organization you manage and collect each event's `venue_id`.
-- Maintain a manual seed list for Dublin venues that actually publish via Eventbrite.
+- `https://www.nch.ie/all-events-listing/`
+- `https://orchestra.rte.ie/whats-on/` and linked event detail pages
+- `https://gatetheatre.ie/whats-on/`
+- `https://www.abbeytheatre.ie/whats-on/`
+- `https://www.gaietytheatre.ie/events/`
+- `https://www.paviliontheatre.ie/events/`
+- `https://www.vicarstreet.com/all-shows-at-vicar-street.html`
+- `https://buttonfactory.ie/shows` and the linked calendar feeds
 
-## Production notes
-
-- Cache venue pages and API responses; daily refresh is usually enough for a month-ahead Dublin listings product.
-- Store raw source payloads if you later add a database, because venue parsers will occasionally need reprocessing.
-- Add source-specific tests before relying on scraped venues for production listings.
-- Check each source's terms before publishing aggregated listings.
-# Events
+Keep API keys in `.env` or GitHub Actions secrets. Do not commit production credentials.

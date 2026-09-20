@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1y/qUQ3pZYmVfPAQTcpaaa7Fo7aF4dsguoQ/FSQ1Fso=",
+  "Hash": "AH25K+oQWNkG/0zEwgHUZND8wxpmrCoDQLR0nP4jB74=",
   "Source": "DublinEventsCollector",
   "BasePath": "_content/DublinEventsCollector",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/abbey-theatre.ico"
     },
     {
-      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-56txzkjqe7.gz",
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-bpzckvf05c.gz",
       "SourceId": "DublinEventsCollector",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DublinEventsCollector",
-      "RelativePath": "styles#[.{fingerprint=56txzkjqe7}]?.css.gz",
+      "RelativePath": "styles#[.{fingerprint=bpzckvf05c}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "bk8o9uwyas",
-      "Integrity": "pV0Yrn0Mw3DCsOfoTmybaT/1Y/vWhvoWkaiR6gGNB5A=",
+      "Fingerprint": "x5z4f5e8c3",
+      "Integrity": "BQ72UGpzWiAOjocv69ePJHjxxthvvXmWi74BnG51zFA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css"
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/ticketmaster.ico"
     },
     {
-      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-1rgz1qb6kp.gz",
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-p3j2yev8wt.gz",
       "SourceId": "DublinEventsCollector",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DublinEventsCollector",
-      "RelativePath": "index#[.{fingerprint=1rgz1qb6kp}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=p3j2yev8wt}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -136,8 +136,8 @@
       "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3o5evq6nb2",
-      "Integrity": "M1vOq9K+a4RdirHoY348uod8P4PAfc67/R1FSlfxzwY=",
+      "Fingerprint": "42e46xhc66",
+      "Integrity": "LBoFfy02da4hLoKXahT0OlIuVDx6msdcKBT/85eflo8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html"
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/national-concert-hall.ico"
     },
     {
-      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-mo878cit0l.gz",
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-x4c2n9obly.gz",
       "SourceId": "DublinEventsCollector",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DublinEventsCollector",
-      "RelativePath": "app#[.{fingerprint=mo878cit0l}]?.js.gz",
+      "RelativePath": "app#[.{fingerprint=x4c2n9obly}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "oqjw8r1hwp",
-      "Integrity": "8M+IdMPGXzt6mc3Lrd5Q/cdWGgheOOWsze6Jo0NJtm4=",
+      "Fingerprint": "lw00n6gq8c",
+      "Integrity": "aywn34d7qxHYQMP9ly7RG2BZ8S02YqX7315GZdU9Naw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js"
@@ -311,6 +311,27 @@
       "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/logos/vicar-street.ico"
     },
     {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/tb6numlu7x-4nt0h1qf8a.gz",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/branding/whatsapp#[.{fingerprint=4nt0h1qf8a}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/branding/whatsapp.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "tmw6g41eqv",
+      "Integrity": "tRp2qpCFK/MY92rs6embvXNioSEu7xFh6ibllMFWnPE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/branding/whatsapp.svg"
+    },
+    {
       "Identity": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/uhqsk2yo1f-5ipweew5fc.gz",
       "SourceId": "DublinEventsCollector",
       "SourceType": "Discovered",
@@ -367,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mo878cit0l",
-      "Integrity": "tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU=",
+      "Fingerprint": "x4c2n9obly",
+      "Integrity": "8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.js"
@@ -393,6 +414,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/branding/dublin-gaa.png"
+    },
+    {
+      "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/branding/whatsapp.svg",
+      "SourceId": "DublinEventsCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/",
+      "BasePath": "_content/DublinEventsCollector",
+      "RelativePath": "assets/branding/whatsapp#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4nt0h1qf8a",
+      "Integrity": "EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/branding/whatsapp.svg"
     },
     {
       "Identity": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/3olympia.png",
@@ -1312,8 +1354,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1rgz1qb6kp",
-      "Integrity": "jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws=",
+      "Fingerprint": "p3j2yev8wt",
+      "Integrity": "y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
@@ -1333,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "56txzkjqe7",
-      "Integrity": "E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY=",
+      "Fingerprint": "bpzckvf05c",
+      "Integrity": "QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/styles.css"
@@ -1343,12 +1385,12 @@
   "Endpoints": [
     {
       "Route": "app.js",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-mo878cit0l.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-x4c2n9obly.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000175592625"
+          "Quality": "0.000182748538"
         }
       ],
       "ResponseHeaders": [
@@ -1358,15 +1400,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5694"
+          "Value": "5471"
         },
         {
           "Name": "ETag",
-          "Value": "\"8M+IdMPGXzt6mc3Lrd5Q/cdWGgheOOWsze6Jo0NJtm4=\""
+          "Value": "\"aywn34d7qxHYQMP9ly7RG2BZ8S02YqX7315GZdU9Naw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 17:47:46 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1386,13 +1428,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU=\""
+          "Value": "W/\"8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU="
+          "Value": "sha256-8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A="
         }
       ]
     },
@@ -1407,7 +1449,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "21074"
+          "Value": "21054"
         },
         {
           "Name": "Content-Type",
@@ -1415,11 +1457,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU=\""
+          "Value": "\"8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 17:47:46 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1429,13 +1471,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU="
+          "Value": "sha256-8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A="
         }
       ]
     },
     {
       "Route": "app.js.gz",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-mo878cit0l.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-x4c2n9obly.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1444,7 +1486,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5694"
+          "Value": "5471"
         },
         {
           "Name": "Content-Type",
@@ -1452,11 +1494,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8M+IdMPGXzt6mc3Lrd5Q/cdWGgheOOWsze6Jo0NJtm4=\""
+          "Value": "\"aywn34d7qxHYQMP9ly7RG2BZ8S02YqX7315GZdU9Naw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 17:47:46 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1474,18 +1516,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8M+IdMPGXzt6mc3Lrd5Q/cdWGgheOOWsze6Jo0NJtm4="
+          "Value": "sha256-aywn34d7qxHYQMP9ly7RG2BZ8S02YqX7315GZdU9Naw="
         }
       ]
     },
     {
-      "Route": "app.mo878cit0l.js",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-mo878cit0l.gz",
+      "Route": "app.x4c2n9obly.js",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-x4c2n9obly.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000175592625"
+          "Quality": "0.000182748538"
         }
       ],
       "ResponseHeaders": [
@@ -1495,15 +1537,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5694"
+          "Value": "5471"
         },
         {
           "Name": "ETag",
-          "Value": "\"8M+IdMPGXzt6mc3Lrd5Q/cdWGgheOOWsze6Jo0NJtm4=\""
+          "Value": "\"aywn34d7qxHYQMP9ly7RG2BZ8S02YqX7315GZdU9Naw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 17:47:46 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1523,13 +1565,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU=\""
+          "Value": "W/\"8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mo878cit0l"
+          "Value": "x4c2n9obly"
         },
         {
           "Name": "label",
@@ -1537,12 +1579,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU="
+          "Value": "sha256-8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A="
         }
       ]
     },
     {
-      "Route": "app.mo878cit0l.js",
+      "Route": "app.x4c2n9obly.js",
       "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/app.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1552,7 +1594,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "21074"
+          "Value": "21054"
         },
         {
           "Name": "Content-Type",
@@ -1560,11 +1602,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU=\""
+          "Value": "\"8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 17:47:46 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1574,7 +1616,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mo878cit0l"
+          "Value": "x4c2n9obly"
         },
         {
           "Name": "label",
@@ -1582,13 +1624,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU="
+          "Value": "sha256-8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A="
         }
       ]
     },
     {
-      "Route": "app.mo878cit0l.js.gz",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-mo878cit0l.gz",
+      "Route": "app.x4c2n9obly.js.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/fthhjvyqsh-x4c2n9obly.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1597,7 +1639,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5694"
+          "Value": "5471"
         },
         {
           "Name": "Content-Type",
@@ -1605,11 +1647,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8M+IdMPGXzt6mc3Lrd5Q/cdWGgheOOWsze6Jo0NJtm4=\""
+          "Value": "\"aywn34d7qxHYQMP9ly7RG2BZ8S02YqX7315GZdU9Naw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 17:47:46 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1627,7 +1669,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mo878cit0l"
+          "Value": "x4c2n9obly"
         },
         {
           "Name": "label",
@@ -1635,7 +1677,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8M+IdMPGXzt6mc3Lrd5Q/cdWGgheOOWsze6Jo0NJtm4="
+          "Value": "sha256-aywn34d7qxHYQMP9ly7RG2BZ8S02YqX7315GZdU9Naw="
         }
       ]
     },
@@ -1718,6 +1760,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-td65qtf30YnRgqLQImqxZcEC7HFa6LJh4hiFAuihZrU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/branding/whatsapp.4nt0h1qf8a.svg",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/tb6numlu7x-4nt0h1qf8a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001121076233"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "891"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tRp2qpCFK/MY92rs6embvXNioSEu7xFh6ibllMFWnPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4nt0h1qf8a"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/branding/whatsapp.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/branding/whatsapp.4nt0h1qf8a.svg",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/branding/whatsapp.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4nt0h1qf8a"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/branding/whatsapp.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/branding/whatsapp.4nt0h1qf8a.svg.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/tb6numlu7x-4nt0h1qf8a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "891"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tRp2qpCFK/MY92rs6embvXNioSEu7xFh6ibllMFWnPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4nt0h1qf8a"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/branding/whatsapp.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tRp2qpCFK/MY92rs6embvXNioSEu7xFh6ibllMFWnPE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/branding/whatsapp.svg",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/tb6numlu7x-4nt0h1qf8a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001121076233"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "891"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tRp2qpCFK/MY92rs6embvXNioSEu7xFh6ibllMFWnPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/branding/whatsapp.svg",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/branding/whatsapp.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/branding/whatsapp.svg.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/tb6numlu7x-4nt0h1qf8a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "891"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tRp2qpCFK/MY92rs6embvXNioSEu7xFh6ibllMFWnPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tRp2qpCFK/MY92rs6embvXNioSEu7xFh6ibllMFWnPE="
         }
       ]
     },
@@ -8056,13 +8396,13 @@
       ]
     },
     {
-      "Route": "index.1rgz1qb6kp.html",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-1rgz1qb6kp.gz",
+      "Route": "index.html",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-p3j2yev8wt.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000641436818"
+          "Quality": "0.000630517024"
         }
       ],
       "ResponseHeaders": [
@@ -8072,19 +8412,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1558"
+          "Value": "1585"
         },
         {
           "Name": "ETag",
-          "Value": "\"M1vOq9K+a4RdirHoY348uod8P4PAfc67/R1FSlfxzwY=\""
+          "Value": "\"LBoFfy02da4hLoKXahT0OlIuVDx6msdcKBT/85eflo8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -8100,26 +8440,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws=\""
+          "Value": "W/\"y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "1rgz1qb6kp"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws="
+          "Value": "sha256-y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE="
         }
       ]
     },
     {
-      "Route": "index.1rgz1qb6kp.html",
+      "Route": "index.html",
       "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8129,7 +8461,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5040"
+          "Value": "5059"
         },
         {
           "Name": "Content-Type",
@@ -8137,11 +8469,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws=\""
+          "Value": "\"y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-p3j2yev8wt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LBoFfy02da4hLoKXahT0OlIuVDx6msdcKBT/85eflo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LBoFfy02da4hLoKXahT0OlIuVDx6msdcKBT/85eflo8="
+        }
+      ]
+    },
+    {
+      "Route": "index.p3j2yev8wt.html",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-p3j2yev8wt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000630517024"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1585"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LBoFfy02da4hLoKXahT0OlIuVDx6msdcKBT/85eflo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p3j2yev8wt"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE="
+        }
+      ]
+    },
+    {
+      "Route": "index.p3j2yev8wt.html",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8151,7 +8628,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1rgz1qb6kp"
+          "Value": "p3j2yev8wt"
         },
         {
           "Name": "label",
@@ -8159,13 +8636,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws="
+          "Value": "sha256-y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE="
         }
       ]
     },
     {
-      "Route": "index.1rgz1qb6kp.html.gz",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-1rgz1qb6kp.gz",
+      "Route": "index.p3j2yev8wt.html.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-p3j2yev8wt.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8174,7 +8651,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1558"
+          "Value": "1585"
         },
         {
           "Name": "Content-Type",
@@ -8182,11 +8659,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"M1vOq9K+a4RdirHoY348uod8P4PAfc67/R1FSlfxzwY=\""
+          "Value": "\"LBoFfy02da4hLoKXahT0OlIuVDx6msdcKBT/85eflo8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:22:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8204,7 +8681,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1rgz1qb6kp"
+          "Value": "p3j2yev8wt"
         },
         {
           "Name": "label",
@@ -8212,18 +8689,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-M1vOq9K+a4RdirHoY348uod8P4PAfc67/R1FSlfxzwY="
+          "Value": "sha256-LBoFfy02da4hLoKXahT0OlIuVDx6msdcKBT/85eflo8="
         }
       ]
     },
     {
-      "Route": "index.html",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-1rgz1qb6kp.gz",
+      "Route": "styles.bpzckvf05c.css",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-bpzckvf05c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000641436818"
+          "Quality": "0.000225886605"
         }
       ],
       "ResponseHeaders": [
@@ -8233,152 +8710,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1558"
+          "Value": "4426"
         },
         {
           "Name": "ETag",
-          "Value": "\"M1vOq9K+a4RdirHoY348uod8P4PAfc67/R1FSlfxzwY=\""
+          "Value": "\"BQ72UGpzWiAOjocv69ePJHjxxthvvXmWi74BnG51zFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws="
-        }
-      ]
-    },
-    {
-      "Route": "index.html",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5040"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws="
-        }
-      ]
-    },
-    {
-      "Route": "index.html.gz",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/e3kn7nqfht-1rgz1qb6kp.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1558"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"M1vOq9K+a4RdirHoY348uod8P4PAfc67/R1FSlfxzwY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-M1vOq9K+a4RdirHoY348uod8P4PAfc67/R1FSlfxzwY="
-        }
-      ]
-    },
-    {
-      "Route": "styles.56txzkjqe7.css",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-56txzkjqe7.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000252589038"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3958"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pV0Yrn0Mw3DCsOfoTmybaT/1Y/vWhvoWkaiR6gGNB5A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8398,13 +8738,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY=\""
+          "Value": "W/\"QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "56txzkjqe7"
+          "Value": "bpzckvf05c"
         },
         {
           "Name": "label",
@@ -8412,12 +8752,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY="
+          "Value": "sha256-QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g="
         }
       ]
     },
     {
-      "Route": "styles.56txzkjqe7.css",
+      "Route": "styles.bpzckvf05c.css",
       "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8427,7 +8767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17853"
+          "Value": "20155"
         },
         {
           "Name": "Content-Type",
@@ -8435,11 +8775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY=\""
+          "Value": "\"QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8449,7 +8789,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "56txzkjqe7"
+          "Value": "bpzckvf05c"
         },
         {
           "Name": "label",
@@ -8457,13 +8797,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY="
+          "Value": "sha256-QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g="
         }
       ]
     },
     {
-      "Route": "styles.56txzkjqe7.css.gz",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-56txzkjqe7.gz",
+      "Route": "styles.bpzckvf05c.css.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-bpzckvf05c.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8472,7 +8812,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3958"
+          "Value": "4426"
         },
         {
           "Name": "Content-Type",
@@ -8480,11 +8820,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pV0Yrn0Mw3DCsOfoTmybaT/1Y/vWhvoWkaiR6gGNB5A=\""
+          "Value": "\"BQ72UGpzWiAOjocv69ePJHjxxthvvXmWi74BnG51zFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8502,7 +8842,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "56txzkjqe7"
+          "Value": "bpzckvf05c"
         },
         {
           "Name": "label",
@@ -8510,18 +8850,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pV0Yrn0Mw3DCsOfoTmybaT/1Y/vWhvoWkaiR6gGNB5A="
+          "Value": "sha256-BQ72UGpzWiAOjocv69ePJHjxxthvvXmWi74BnG51zFA="
         }
       ]
     },
     {
       "Route": "styles.css",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-56txzkjqe7.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-bpzckvf05c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000252589038"
+          "Quality": "0.000225886605"
         }
       ],
       "ResponseHeaders": [
@@ -8531,15 +8871,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3958"
+          "Value": "4426"
         },
         {
           "Name": "ETag",
-          "Value": "\"pV0Yrn0Mw3DCsOfoTmybaT/1Y/vWhvoWkaiR6gGNB5A=\""
+          "Value": "\"BQ72UGpzWiAOjocv69ePJHjxxthvvXmWi74BnG51zFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8559,13 +8899,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY=\""
+          "Value": "W/\"QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY="
+          "Value": "sha256-QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g="
         }
       ]
     },
@@ -8580,7 +8920,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17853"
+          "Value": "20155"
         },
         {
           "Name": "Content-Type",
@@ -8588,11 +8928,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY=\""
+          "Value": "\"QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8602,13 +8942,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY="
+          "Value": "sha256-QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g="
         }
       ]
     },
     {
       "Route": "styles.css.gz",
-      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-56txzkjqe7.gz",
+      "AssetFile": "/Users/gofoghlu/Development/dublin-events-collector/obj/Debug/net9.0/compressed/3nzgjfzod6-bpzckvf05c.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8617,7 +8957,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3958"
+          "Value": "4426"
         },
         {
           "Name": "Content-Type",
@@ -8625,11 +8965,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pV0Yrn0Mw3DCsOfoTmybaT/1Y/vWhvoWkaiR6gGNB5A=\""
+          "Value": "\"BQ72UGpzWiAOjocv69ePJHjxxthvvXmWi74BnG51zFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Sep 2026 18:57:35 GMT"
+          "Value": "Sun, 20 Sep 2026 22:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8647,7 +8987,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pV0Yrn0Mw3DCsOfoTmybaT/1Y/vWhvoWkaiR6gGNB5A="
+          "Value": "sha256-BQ72UGpzWiAOjocv69ePJHjxxthvvXmWi74BnG51zFA="
         }
       ]
     }

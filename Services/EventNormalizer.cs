@@ -32,6 +32,7 @@ public sealed class EventNormalizer
         var score = 0;
         if (!string.IsNullOrWhiteSpace(item.Url)) score++;
         if (!string.IsNullOrWhiteSpace(item.ImageUrl)) score++;
+        if (!string.IsNullOrWhiteSpace(item.Blurb)) score++;
         if (!string.IsNullOrWhiteSpace(item.Category)) score++;
         if (!string.IsNullOrWhiteSpace(item.Status)) score++;
         if (item.PriceMin.HasValue || item.PriceMax.HasValue) score++;

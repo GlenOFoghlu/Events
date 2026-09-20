@@ -114,6 +114,7 @@ public sealed partial class ButtonFactoryEventSource(IHttpClientFactory httpClie
             Source = Name,
             SourceEventId = $"button-factory-{StableId(uid)}",
             Title = CleanText(title) ?? title,
+            Blurb = VenueHtmlParsing.Blurb(Get(properties, "DESCRIPTION")),
             Venue = CleanText(Get(properties, "LOCATION")) ?? "Button Factory",
             City = "Dublin",
             StartsAt = startsAt.Value,

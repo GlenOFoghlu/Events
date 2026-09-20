@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/assets/branding/dublin-gaa.png"
     },
     {
+      "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/branding/whatsapp.svg",
+      "PackagePath": "staticwebassets/assets/branding/whatsapp.svg"
+    },
+    {
       "Id": "/Users/gofoghlu/Development/dublin-events-collector/wwwroot/assets/favicons/3olympia.png",
       "PackagePath": "staticwebassets/assets/favicons/3olympia.png"
     },

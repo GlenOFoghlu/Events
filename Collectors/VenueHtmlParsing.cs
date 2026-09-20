@@ -15,6 +15,24 @@ internal static partial class VenueHtmlParsing
             .Trim();
     }
 
+    public static string? Blurb(string? value, int maxLength = 320)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return null;
+        }
+
+        var cleaned = WhitespaceRegex().Replace(Clean(value), " ");
+        if (cleaned.Length <= maxLength)
+        {
+            return cleaned;
+        }
+
+        var shortened = cleaned[..maxLength];
+        var lastSpace = shortened.LastIndexOf(' ');
+        return $"{shortened[..(lastSpace > maxLength / 2 ? lastSpace : maxLength)].TrimEnd()}...";
+    }
+
     public static string? MatchValue(Regex regex, string html)
     {
         var match = regex.Match(html);
@@ -140,6 +158,9 @@ internal static partial class VenueHtmlParsing
 
     [GeneratedRegex("<[^>]+>")]
     private static partial Regex StripTagsRegex();
+
+    [GeneratedRegex(@"\s+")]
+    private static partial Regex WhitespaceRegex();
 
     [GeneratedRegex(@"(\d{1,2})(st|nd|rd|th)", RegexOptions.IgnoreCase)]
     private static partial Regex OrdinalSuffixRegex();

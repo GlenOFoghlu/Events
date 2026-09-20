@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mo878cit0l</Fingerprint>
-      <Integrity>tj9yyY84gs9FxT4POcbpdzE25ETG3aTlGf6lwk2I7rU=</Integrity>
+      <Fingerprint>x4c2n9obly</Fingerprint>
+      <Integrity>8SRSJRAVEA8xwCdCrcbxLqw9YtEpWE8VOxkwrZTSo7A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.js'))</OriginalItemSpec>
@@ -35,6 +35,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\branding\dublin-gaa.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\branding\whatsapp.svg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DublinEventsCollector</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DublinEventsCollector</BasePath>
+      <RelativePath>assets/branding/whatsapp.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4nt0h1qf8a</Fingerprint>
+      <Integrity>EEsM5U+kYIQvWDkxAvRPgFSJdbex0K3Cy7s7kxjvo5Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\branding\whatsapp.svg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\favicons\3olympia.png'))">
       <SourceType>Package</SourceType>
@@ -822,8 +840,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1rgz1qb6kp</Fingerprint>
-      <Integrity>jbiq0RerbFg7akNuD+7e2AX5h6Lnyt5VP/LHGge0Tws=</Integrity>
+      <Fingerprint>p3j2yev8wt</Fingerprint>
+      <Integrity>y+hYp5OKfIy08iJ9aC3KnsZW3nBLpzmhH/kXU1wRNbE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
@@ -840,8 +858,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>56txzkjqe7</Fingerprint>
-      <Integrity>E2vHkjCRoCPWPlxHHMHvnCl+4c3mt0Gbvks/xWP2uXY=</Integrity>
+      <Fingerprint>bpzckvf05c</Fingerprint>
+      <Integrity>QWC1bxQjTIT5MzDrEMYtun8EAgL+Dcr1f3YZ1idia5g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\styles.css'))</OriginalItemSpec>

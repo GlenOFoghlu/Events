@@ -191,6 +191,7 @@ public sealed class EventbriteOrganizationEventSource(
             Source = Name,
             SourceEventId = item.String("id") ?? Guid.NewGuid().ToString("n"),
             Title = item.Property("name")?.String("text") ?? "Untitled Eventbrite event",
+            Blurb = VenueHtmlParsing.Blurb(item.Property("description")?.String("text") ?? item.Property("summary")?.String("text")),
             Venue = item.Property("venue")?.String("name"),
             StartsAt = start.Value,
             EndsAt = DublinDateTime.ParseIsoOrLocal(item.Property("end")?.String("utc")),

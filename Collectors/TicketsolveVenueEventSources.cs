@@ -45,7 +45,8 @@ public abstract partial class TicketsolveVenueEventSource(IHttpClientFactory htt
                     .SelectMany(image => image.Elements("url"))
                     .OrderByDescending(url => ImageSize(url.Attribute("size")?.Value))
                     .FirstOrDefault()?.Value.Trim();
-                var (priceMin, priceMax) = ParsePriceRange(Text(show.Element("description")));
+                var description = Text(show.Element("description"));
+                var (priceMin, priceMax) = ParsePriceRange(description);
 
                 foreach (var performance in show.Element("events")?.Elements("event") ?? [])
                 {
@@ -61,6 +62,7 @@ public abstract partial class TicketsolveVenueEventSource(IHttpClientFactory htt
                         Source = Name,
                         SourceEventId = $"{Name}-{eventId}",
                         Title = title,
+                        Blurb = VenueHtmlParsing.Blurb(description),
                         Venue = VenueWithLayout(venueName, Text(performance.Element("venue_layout"))),
                         StartsAt = startsAt.Value,
                         Url = Text(performance.Element("url")) ?? Text(show.Element("url")),

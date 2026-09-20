@@ -180,9 +180,13 @@ select {
 
 .filters {
   display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 0.8fr)) minmax(170px, 1.2fr) minmax(125px, 0.85fr) minmax(155px, 1fr) minmax(110px, 0.75fr) auto;
+  grid-template-columns: repeat(2, minmax(120px, 0.8fr)) minmax(170px, 1.2fr) minmax(125px, 0.85fr) minmax(155px, 1fr) auto;
   gap: 12px;
   align-items: end;
+}
+
+.filters-toggle {
+  display: none;
 }
 
 label {
@@ -660,33 +664,41 @@ button:hover {
 
 .event-share-slot {
   display: inline-flex;
-  width: 64px;
-  min-width: 64px;
+  width: 44px;
+  min-width: 44px;
   align-items: center;
   justify-content: center;
 }
 
 .sold-out-action {
   display: inline-flex;
-  width: 64px;
-  min-width: 64px;
-  min-height: 36px;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
   align-items: center;
   justify-content: center;
   border: 1px solid #a7aaad;
   border-radius: 3px;
+  padding: 0 3px;
   background: #dcdcde;
   color: #50575e;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
+  line-height: 1.05;
   text-align: center;
   text-transform: uppercase;
+  white-space: normal;
 }
 
 .detail-sold-out {
+  height: 36px;
+  min-height: 36px;
   width: auto;
   min-width: 88px;
   padding: 0 12px;
+  font-size: 11px;
+  white-space: nowrap;
 }
 
 .whatsapp-button {
@@ -698,27 +710,29 @@ button:hover {
   border: 1px solid #128c7e;
   border-radius: 3px;
   padding: 0 12px;
-  background: #25d366;
-  color: #ffffff;
+  background: #ffffff;
+  color: #128c7e;
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .whatsapp-button:hover {
-  background: #128c7e;
-  color: #ffffff;
+  background: #e9f9ef;
+  color: #075e54;
 }
 
 .whatsapp-button.icon-only {
-  width: 36px;
-  min-width: 36px;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
   padding: 0;
 }
 
 .whatsapp-icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   flex: 0 0 auto;
 }
 
@@ -754,6 +768,13 @@ button:hover {
   gap: 10px;
   align-items: flex-start;
   margin: 16px 0 10px;
+}
+
+.detail-blurb {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .detail-panel h2 {
@@ -1003,12 +1024,47 @@ html[data-theme="dark"] .sold-out-action {
   }
 
   .identity h1 {
-    font-size: 32px;
+    font-size: 26px;
+  }
+
+  .topbar {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .filters-toggle {
+    display: flex;
+    width: 100%;
+    min-height: 44px;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    padding: 0 12px;
+  }
+
+  .filters-toggle__indicator::before {
+    content: "+";
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .filters-toggle[aria-expanded="true"] .filters-toggle__indicator::before {
+    content: "-";
+  }
+
+  .filters[hidden] {
+    display: none;
   }
 
   .filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px 10px;
+  }
+
+  .filters input,
+  .filters select,
+  .filters button {
+    min-height: 44px;
   }
 
   .filters > label:not(.filter-date),
@@ -1017,20 +1073,106 @@ html[data-theme="dark"] .sold-out-action {
   }
 
   .summary-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    padding: 10px 8px;
+  }
+
+  .summary-strip > div {
+    border-right: 1px solid var(--soft-line);
+    text-align: center;
+  }
+
+  .summary-strip > div:nth-child(3) {
+    border-right: 0;
+  }
+
+  .metric {
+    font-size: 20px;
   }
 
   .window-label {
-    justify-self: start;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .source-status {
+    grid-template-columns: none;
+    grid-auto-columns: minmax(142px, 42vw);
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: inline proximity;
+    overscroll-behavior-inline: contain;
+  }
+
+  .source-pill {
+    min-height: 76px;
+    padding: 8px 10px;
+    scroll-snap-align: start;
+  }
+
+  .source-brand {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 7px;
+    min-height: 34px;
+  }
+
+  .source-logo {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+  }
+
+  .source-brand strong,
+  .source-count {
+    font-size: 12px;
+  }
+
+  .source-pill.text-logo .source-brand {
+    min-height: 34px;
   }
 
   .event-row {
-    grid-template-columns: 58px 1fr;
+    grid-template-columns: 48px minmax(0, 1fr) 64px;
+    gap: 8px;
+    min-height: 72px;
+    padding: 8px 10px;
+  }
+
+  .datebox {
+    width: 44px;
+    min-height: 46px;
+  }
+
+  .datebox span:last-child {
+    font-size: 18px;
+  }
+
+  .event-title-line {
+    gap: 6px;
+    margin-bottom: 4px;
+  }
+
+  .event-main h3 {
+    font-size: 15px;
+  }
+
+  .event-meta {
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .event-meta .source-tag {
+    display: none;
   }
 
   .event-actions {
-    grid-column: 2;
-    justify-self: start;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
   }
 
   .site-footer__inner {

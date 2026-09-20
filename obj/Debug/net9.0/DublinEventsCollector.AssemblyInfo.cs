@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DublinEventsCollector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a19fc720eed2216aa54f6968a99a66d32b1d018")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ed508f997653fd3c43b1cd480763edd4c8f6792")]
 [assembly: System.Reflection.AssemblyProductAttribute("DublinEventsCollector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DublinEventsCollector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

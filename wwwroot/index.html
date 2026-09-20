@@ -11,7 +11,7 @@
         ?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     })();
   </script>
-  <link rel="stylesheet" href="/styles.css?v=20260920-mobile-dates">
+  <link rel="stylesheet" href="/styles.css?v=20260920-whatsapp-official">
 </head>
 <body id="top">
   <header class="admin-bar">
@@ -36,6 +36,11 @@
         </div>
       </div>
 
+      <button id="filtersToggle" class="filters-toggle" type="button" aria-expanded="true" aria-controls="filters">
+        <span>Filters</span>
+        <span class="filters-toggle__indicator" aria-hidden="true"></span>
+      </button>
+
       <form id="filters" class="filters">
         <label class="filter-date filter-date--from">
           <span>From</span>
@@ -59,13 +64,6 @@
           <span id="venueFilterLabel">Venue</span>
           <select id="venueFilter" name="venue">
             <option value="">All venues</option>
-          </select>
-        </label>
-        <label>
-          <span>Sort</span>
-          <select id="sortOrder" name="sort">
-            <option value="date">Date</option>
-            <option value="venue">Venue</option>
           </select>
         </label>
         <button type="submit">Refresh</button>
@@ -93,9 +91,9 @@
         <button id="sourcesWithEventsTab" class="source-tab active" type="button" role="tab" aria-selected="true" data-source-tab="with-events">
           Reported events <span id="sourcesWithEventsCount">0</span>
         </button>
-        <button id="sourcesWithoutEventsTab" class="source-tab" type="button" role="tab" aria-selected="false" data-source-tab="without-events">
+        <!-- <button id="sourcesWithoutEventsTab" class="source-tab" type="button" role="tab" aria-selected="false" data-source-tab="without-events">
           No events <span id="sourcesWithoutEventsCount">0</span>
-        </button>
+        </button> -->
       </div>
       <div id="sourceStatus" class="source-status" role="tabpanel" aria-label="Source status"></div>
     </section>
@@ -129,7 +127,7 @@
       <nav class="site-footer__nav" aria-label="Footer navigation">
         <a href="#filters">Search</a>
         <a href="#sources">Sources</a>
-        <a href="mailto:glen.foghlu@gmail.com">Contact</a>
+        <a href="mailto:glen.ofoghlu@gmail.com">Contact</a>
         <a href="#top">Back to top</a>
       </nav>
       <p class="site-footer__note">Event details, prices and availability should be confirmed with the original ticket provider.</p>
@@ -137,6 +135,6 @@
     </div>
   </footer>
 
-  <script src="/app.js?v=20260920-ticketmaster-venue-filter"></script>
+  <script src="/app.js?v=20260920-dashboard-icons"></script>
 </body>
 </html>

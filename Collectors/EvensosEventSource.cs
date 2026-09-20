@@ -61,6 +61,7 @@ public sealed class EvensosEventSource(
             Source = Name,
             SourceEventId = item.Value.String("@id") ?? item.Value.String("url") ?? Guid.NewGuid().ToString("n"),
             Title = item.Value.String("name") ?? "Untitled Evensos event",
+            Blurb = VenueHtmlParsing.Blurb(item.Value.String("description")),
             Venue = location?.String("name"),
             StartsAt = start.Value,
             EndsAt = DublinDateTime.ParseIsoOrLocal(item.Value.String("endDate")),
